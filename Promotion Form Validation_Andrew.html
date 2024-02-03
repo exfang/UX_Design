@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assignment.css">
+    <title>Contact Us Confirmation</title>
+
+  </head>
+  <body>
+    <div class='promotionvalidation' style="color:black">
+
+
+        <h3 class='promotionvalidationheader'>Please check if your entered details are correct. If all is correct, please press 'Submit'. If not, please press 'Cancel'. </h3>
+        <hr>
+        <div class="innerpromotioncontent">
+        <p>Title:        <span id='promotiontitle' style="color:blue"></span></p>
+        <p>Surname:      <span id='promosurnamevalue' style="color:blue"></span></p>
+        <p>Firstname:    <span id='promotionfirstnamevalue' style="color:blue"></span></p>
+        <p>Phone number: <span id='promotionphonevalue' style="color:blue"></span></p>
+        <p>Email Address: <span id='promotionemailvalue' style="color:blue"></span></p>
+        <p>Subject:      <span id='promotionsubjectvalue' style="color:blue"></span></p>
+        <p>Comments:     <span id='promotioncommentsvalue' style="color:blue"></span></p>
+      </div>
+      <div>
+        <a href='main_Parik.html'><button class='promotionvalidationsubmission' onclick='promovalidsub()' type="button" name="button">Submit</button></a>  <!-- Change link here-->
+        <a href='Promotion Form_Andrew.html'><button class='promotionvalidationsubmission' type="button" name="button">Cancel</button></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById('promotiontitle').innerHTML = localStorage.getItem('promotiontitlevalue');
+    document.getElementById('promosurnamevalue').innerHTML = localStorage.getItem('promosurnamevalue');
+    document.getElementById('promotionfirstnamevalue').innerHTML = localStorage.getItem('promotionfirstnamevalue');
+    document.getElementById('promotionphonevalue').innerHTML = localStorage.getItem('promotionphonevalue');
+    document.getElementById('promotionemailvalue').innerHTML = localStorage.getItem('promotionemailvalue');
+    document.getElementById('promotionsubjectvalue').innerHTML = localStorage.getItem('promotionsubjectvalue');
+    document.getElementById('promotioncommentsvalue').innerHTML = localStorage.getItem('promotioncommentsvalue');
+
+    function promovalidsub() {
+      alert("Your form has been submitted. We will contact you within 3 business days. In the meantime, please continue to support Excellence Hotel and constantly check your email.")
+    }
+  </script>
+  <!-- footer -->
+  <footer class='signupfooter'>
+    <div class='footer'>
+        <div class='footer-heading footer-1'>
+          <h2 class='footer-title'>Useful Links</h2>
+          <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+          <a class='footer-links' href="main_Parik.html">Reviews</a>
+          <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+          <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2 class='footer-title'>Forms</h2>
+          <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+          <a class='footer-links' href="UXFABOOKING_Cyrus.html" target="_blank">Facilities Booking Form</a>
+          <a class='footer-links' href="Promotion Form_Andrew.html" target="_blank">Contact Us Form</a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2 class='footer-title'>Members</h2>
+          <a class='footer-links' href="main_Parik.html">Sign Up</a>
+          <a class='footer-links' href="main_Parik.html">Login</a>
+          <a class='footer-links' href="#"></a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-4">
+          <h2 class='footer-title'>Connect With Us</h2>
+          <span>
+            <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</html>

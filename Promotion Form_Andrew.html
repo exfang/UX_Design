@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us Form</title>
+  <link href='assignment.css' type='text/css' rel='stylesheet'>
+</head>
+
+<body>
+<!-- Contact Us descriptions -->
+    <div class='promotion-form'>
+      <form id='promotionform' action='Promotion Form Validation_Andrew.html' method='GET' onsubmit='passvalues()'>
+        <div class='promotion-label'>
+          <h1>Contact Us</h1>
+          <p>If you have any question or would like to contact us, please feel free to dial the number below or send us an email via the email address provided below.</p>
+          <h3>Phone  &nbsp; &nbsp; (+65) 6123 4567<br>Email  &nbsp; &nbsp; contact@excellence.com</h3>
+          <p>You can also use the form below to contact us.</p>
+          <hr></hr>
+          <p>Fields marked * are required</p>
+        </div>
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promotion-title promotion-label'>Title </label>
+          </div>
+          <div>
+            <input list='promotion-titles' id='promotiontitle' class='promotion-form-sizing' placeholder='Please Select'>
+            <datalist id='promotion-titles'>
+              <option value='Mr'>
+              <option value='Mrs'>
+              <option value='Miss'>
+              <option value='Sir'>
+              <option value='Mdms'>
+              <option value='Dr'>
+            </datalist>
+
+          </div>
+          <br>
+        </div>
+
+
+      <!-- Surname -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promotion-surname promotion-label' id='local1'>Family Name/ Surname*</label>
+          </div>
+          <div>
+            <input id='promotionsurname' name='promotion-surname' type='text' class='promotion-form-sizing'>
+            <div id='promoerror1'></div>
+            <p id='errormessage1' style='color: red;font-size: 15px;'></p>
+          </div>
+        </div>
+      <!-- First Name -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promotion-firstname promotion-label' id='local2'>First Name* </label>
+          </div>
+          <div>
+            <input id='promotionfirstname' name='promotion-firstname' type='text'class='promotion-form-sizing'>
+            <div id='promoerror2'></div>
+            <p id='errormessage2' style='color: red;font-size: 15px;'></p>
+          </div>
+        </div>
+
+      <!-- Phone number -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promotion-phonenumber promotion-label'>Contact Phone Number </label>
+          </div>
+          <div>
+            <input id='promotionphone' name='promo-phone' type='text' class='promotion-form-sizing' title='Please enter numbers only' pattern='\d+'>
+          </div>
+          <br>
+        </div>
+      <!-- Email -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promotion-email promotion-label' id='local3'>Email Address* </label>
+          </div>
+          <div>
+            <input id='promotionemail' name='promotion-email' type='text' class='promotion-form-sizing' title="Please enter an email address containing at least one of these special characters such as '@' and '.'" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <div id='promoerror4'></div>
+            <p id='errormessage4' style='color: red;font-size: 15px;'></p>
+          </div>
+        </div>
+
+
+      <!-- Subject-->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promo-subject promotion-label' id='local4'>Subject* </label>
+          </div>
+          <div>
+            <input list="promotion-subject" id='promotionsubject' name="subject" placeholder="Please Select" class='promotion-form-sizing'>
+            <datalist id='promotion-subject'>
+            <option value='Feedback'>
+            <option value='Enquiry'>
+            <option value='Account Issues'>
+            <option value='Codes'>
+            <option value='Issues'>
+          </div>
+          <div id='promoerror5'></div>
+          <p id='errormessage5' style='color: red;font-size: 15px;'></p>
+        </div>
+
+      <!-- Comments -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class="promo-comments promotion-label">Comments (if any)</label>
+          </div>
+          <div>
+            <textarea id='promotioncomments' type='text' rows='5' class='promotion-form-textbox-sizing'></textarea>
+          </div>
+        </div>
+
+    <!-- submit button-->
+        <div>
+          <button class='promotion-submit' id='promotionsubmitbutton' type="submit">Submit</button>
+          <script>
+            const promotiontitle = document.getElementById('promotiontitle');
+            const promosurname = document.getElementById('promotionsurname');
+            const promotionfirstname = document.getElementById("promotionfirstname");
+            const promotionphone = document.getElementById('promotionphone');
+            const promotionemail = document.getElementById("promotionemail");
+            const promotionsubject = document.getElementById("promotionsubject");
+            const promotioncomments = document.getElementById("promotioncomments");
+
+            function passvalues() {
+              localStorage.setItem("promotiontitlevalue", promotiontitle.value);
+              localStorage.setItem("promosurnamevalue", promosurname.value);
+              localStorage.setItem("promotionfirstnamevalue", promotionfirstname.value);
+              localStorage.setItem("promotionphonevalue", promotionphone.value);
+              localStorage.setItem("promotionemailvalue", promotionemail.value);
+              localStorage.setItem("promotionsubjectvalue", promotionsubject.value);
+              localStorage.setItem("promotioncommentsvalue", promotioncomments.value);
+            }
+
+            document.getElementById('promotionform').addEventListener('submit', function(e){
+                          if (promosurname.value == ''){
+                            document.getElementById('promoerror1').style.display = "block";
+                            document.getElementById('errormessage1').innerHTML = 'Please fill in your surname';
+                            document.getElementById("local1").scrollIntoView({behavior: 'smooth'});
+                            e.preventDefault();
+                          }
+                          else if (promotionfirstname.value == ''){
+                            document.getElementById('promoerror2').style.display = "block";
+                            document.getElementById('errormessage2').innerHTML = 'Please fill in your first name';
+                            document.getElementById("local2").scrollIntoView({behavior: 'smooth'});
+                            e.preventDefault();
+                          }
+                          else if (promotionemail.value == ''){
+                            document.getElementById('promoerror4').style.display = "block";
+                            document.getElementById('errormessage4').innerHTML = 'Please enter in your email address';
+                            document.getElementById("local3").scrollIntoView({behavior: 'smooth'});
+                            e.preventDefault();
+                          }
+                          else if (promotionsubject.value == ''){
+                            document.getElementById('promoerror5').style.display = "block";
+                            document.getElementById('errormessage5').innerHTML = 'Please select a subject';
+                            document.getElementById("local4").scrollIntoView({behavior: 'smooth'});
+                            e.preventDefault();
+                          }
+                        })
+          </script>
+        </div>
+      </div>
+    </form>
+  </body>
+  <!-- footer -->
+  <footer>
+    <div class='footer'>
+        <div class='footer-heading footer-1'>
+          <h2 class='footer-title'>Useful Links</h2>
+          <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+          <a class='footer-links' href="main_Parik.html">Reviews</a>
+          <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+          <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2 class='footer-title'>Forms</h2>
+          <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+          <a class='footer-links' href="UXFABOOKING_Cyrus.html" target="_blank">Facilities Booking Form</a>
+          <a class='footer-links' href="Promotion Form_Andrew.html">Contact Us Form</a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2 class='footer-title'>Members</h2>
+          <a class='footer-links' href="main_Parik.html">Sign Up</a>
+          <a class='footer-links' href="main_Parik.html">Login</a>
+          <a class='footer-links' href="#"></a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-4">
+          <h2 class='footer-title'>Connect With Us</h2>
+          <span>
+            <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</html>

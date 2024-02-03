@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html id="htmlFA">
+  <head>
+    <title>Facility Booking Form</title>
+    <link href=assignment.css rel="stylesheet" type="text/css">
+  </head>
+  <body id="bodyFA">
+    <div class="divFA" id="testboxFA">
+      <form id="jenny" action="FAbookingcomplete_Cyrus.html">
+        <div class="git">
+          <h1 class="svolach">Facility Booking </h1>
+        </div>
+        <br></br>
+        <fieldset>
+          <legend id="bd">Booking Details</legend>
+        <div class="item">
+          <p class="pFA">Full name as in NRIC:</p>
+          <div class="name-item">
+            <input id="help" class="du" type="text" name="name" >
+            <div id='FA1'></div>
+            <p id='FAM1' style='color: red;'></p>
+            </div>
+        </div>
+        <div class="item">
+          <p class="pFA">Email:</p>
+          <input id="how" class="du" type="email" name="email" >
+          <div id='FA2'></div>
+          <p id='FAM2' style='color: red;'></p>
+        </div>
+        <div class="item" >
+          <p class="pFA">Phone Number:</p>
+          <input  id = "hmm" class="du" type="tel" name="phone" pattern="[1-9]{1}[0-9]{7}" title="Please enter in a suitable phone number ">
+          <div id='FA3'></div>
+          <p id='FAM3' style='color: red;'></p>
+        </div>
+
+        <div class="item" >
+          <p class="pFA">Reservation Date (DD/MM/YYYY):</p>
+          <input class="du" id="dateFA"type="date" name="bdate" value="2021-01-01" min="2021-01-01" max="2021-12-31" >
+
+        </div>
+        <div class="item">
+          <label for="hours" class='pFA'>Which facility would you like to book ? :</label>
+            <br>
+          <select class='du' id='selectfacility'name="WATUWANT" onchange="new()">
+          <option value="Please choose option"></option>
+            <option value="Gym">Gym</option>
+            <option value="Jacuzzi">Jacuzzi</option>
+            <option value="Swimming pool">Swimming pool</option>
+          </select>
+        </div>
+          <div class="item">
+            <p class="pFA"> How many hours would you like to book the facility for? (Maximum 5 hours per booking) </p>
+            <input id="fu" class="du" type="number" name="phone" min ="0" max = "5">
+            <div id='FA4'></div>
+            <p id='FAM4' style='color: red;'></p>
+          </div>
+
+   <div class="item">
+          <p class="pFA">Reservation Time</p>
+          <input class="du" type="time" name="btime" >
+               </div>
+        <div class="item">
+          <p class="pFA">Number of adults? (Maximum 3 pax)</p>
+          <input id="shut" class="du" type="number" name="number" min ="0" max = "3" >
+          <div id='FA5'></div>
+          <p id='FAM5' style='color: red;'></p>
+        </div>
+        <div class="item">
+          <p class="pFA">Number of children? (Maximum 3 pax)</p>
+          <input  id="dea"class="du" type="number" name="number" min ="0" max = "3">
+          <div id='FAM6'></div>
+          <p id='FAM6' style='color: red;'></p>
+        </div>
+         <div class="item">
+          <p class="pFA">Anything else you would to add?</p>
+          <textarea  id = "textareaFA" rows= "3"></textarea>
+        </div>
+        </fieldset>
+         <div class="btn-block">
+          <button id="buttonFA" type="submit" >Submit</button>
+        </div>
+        <script type="text/javascript">
+        // document.getElementById('hmm').onblur = function (event) {fuc
+        //   let valString = Number(event.target.value).toString();
+        //    if (valString.length === 8 || valString.length === 8) return;
+        //     event.target.value = valString.length > 8 ?
+        //     valString.substr(0, 8) :
+        //      (valString.length > 8 ? valString.substr(0, 8) : null);
+        //     }
+
+
+        // const promosurname = document.getElementById('promotionsurname');
+          const drunk = document.getElementById("help")
+          const a = document.getElementById('how');
+          const aa = document.getElementById("hmm");
+          const aaa= document.getElementById('fu');
+          const aaaa = document.getElementById("sh  ut");
+          const aaaaa = document.getElementById("dea");
+          const aaaaaa = document.getElementById("");
+          const aaaaaaa = document.getElementById("")
+
+          document.getElementById('jenny').addEventListener('submit', function(e){
+            if (drunk.value == ''){
+              document.getElementById('FA1').style.display = "block";
+              document.getElementById('FAM1').innerHTML = 'Please enter your name';
+              e.preventDefault();
+            }
+            else if (a.value == ''){
+              document.getElementById('FA2').style.display = "block";
+              document.getElementById('FAM2').innerHTML = 'Please enter your email';
+              e.preventDefault();
+            }
+            else if (aa.value == ''){
+              document.getElementById('FA3').style.display = "block";
+              document.getElementById('FAM3').innerHTML = 'Please fill in the blank';
+              e.preventDefault();
+            }
+            else if (aaa.value == ''){
+              document.getElementById('FA4').style.display = "block";
+              document.getElementById('FAM4').innerHTML = 'Please fill in the blank';
+              e.preventDefault();
+            }
+            else if (aaaa.value == ''){
+              document.getElementById('FA5').style.display = "block";
+              document.getElementById('FAM5').innerHTML = 'Please fill in the blank';
+              e.preventDefault();
+            }
+            else if (aaaaa.value == ''){
+              document.getElementById('FA6').style.display = "block";
+              document.getElementById('FAM6').innerHTML = 'Please fill in the blank';
+              e.preventDefault();
+            }
+            else {
+              document.getElementById('jenny').submit()
+            }
+          })
+        </script>
+      </form>
+    </div>
+  </body>
+  <!-- footer -->
+  <footer>
+    <div class='footer'>
+        <div class='footer-heading footer-1'>
+          <h2 class='footer-title'>Useful Links</h2>
+          <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+          <a class='footer-links' href="main_Parik.html">Reviews</a>
+          <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+          <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2 class='footer-title'>Forms</h2>
+          <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+          <a class='footer-links' href="UXFABOOKING_Cyrus.html">Facilities Booking Form</a>
+          <a class='footer-links' href="Promotion Form_Andrew.html" target="_blank">Contact Us Form</a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2 class='footer-title'>Members</h2>
+          <a class='footer-links' href="main_Parik.html">Sign Up</a>
+          <a class='footer-links' href="main_Parik.html">Login</a>
+          <a class='footer-links' href="#"></a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-4">
+          <h2 class='footer-title'>Connect With Us</h2>
+          <span>
+            <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</html>

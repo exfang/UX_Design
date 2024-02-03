@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Promotion Main</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link  rel="stylesheet" href="assignment.css">
+      <!-- <link rel="stylesheet" href="C:\Users\parikshit joshi\Desktop\Atom\Zassignment\form1.css">
+      <link rel="stylesheet" href="C:\Users\parikshit joshi\Desktop\Atom\Zassignment\facilities2.css">
+      <link rel="stylesheet" href="C:\Users\parikshit joshi\Desktop\Atom\Zassignment\room.css">
+      <link rel="stylesheet" href="C:\Users\parikshit joshi\Desktop\Atom\Zassignment\cyR1.css">
+      <link rel="stylesheet" href="C:\Users\parikshit joshi\Desktop\Atom\Zassignment\andrewpromo.css"> -->
+      <nav>
+          <div class="navbar-logo-img" id="logo">
+             <a class=''href='main_Parik.html' style='font-family:Times;text-decoration: none; color: black;'><img src="images\logo (2).png"> EXCELLENCE HOTEL </img></a>
+
+           </div>
+<div class='fag'>
+          <label for="drop" class="toggleR">Menu</label>
+          <input type="checkbox" id="drop" />
+              <ul class="menu">
+                <li>
+
+
+
+                    <!-- First Tier Drop Down -->
+
+                  <a class="buttonR" href="About Us page_RTB.html" style="color:black" >About Us</a>
+
+                  <input type="checkbox" id="drop-1"/>
+
+
+
+                  <li><a href="uxdassignment_Ulysse.html" style="color:black">Room & Suites</a></li>
+                  <li><a href="UXfacility_Cyrus.html" style="color:black">Facilities</a></li>
+                  <li><a href="Promotion Secondary_Andrew.html" style="color:black">Promotions</a></li>
+
+                  <li>
+                  <ul>
+                  <!-- Second Tier Drop Down -->
+                  <label for="drop-2" class="toggleR">Sign Up/Log In</label>
+                  <a href="#">Sign Up/Log In</a>
+                  <input type="checkbox" id="drop-2"/>
+
+                  </ul>
+                  </li>
+                  <!-- Log In Button -->
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Log In</button>
+
+                    <div id="id01" class="modalR">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                    <form class="modal-contentR" action="/action_page.php" >
+                    <div class="containerR">
+                    <h1>Log In</h1>
+                    <hr>
+                    <p><label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                    <p><label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                    <p><label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label></p>
+
+                    <div class="clearfixR">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnR" style='border: 1px solid #DAA520;'>Cancel</button>
+                      <button type="submit" class="signupbtnR" href="Successful creation.html"  style='border: 1px solid #DAA520;'>Log In</button>
+                    </div>
+                    </div>
+                    </form>
+                    </div>
+
+
+
+                      <!-- Sign Up Button -->
+                      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Sign Up</button>
+
+                      <div id="id02" class="modalR">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                      <form class="modal-contentR" action="/action_page.php">
+                      <div class="containerR">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                      <p><label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Enter Name" name="name" required></p>
+
+                      <p><label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                      <p><label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                      <p><label for="psw-repeat"><b>Confirm Password</b></label>
+                      <input type="password" placeholder="Re-Enter Password" name="psw-repeat" required></p>
+
+
+                      <div class="clearfixR">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnR" style='border: 1px solid #DAA520;'>Cancel</button>
+
+                        <button type="submit" class="signupbtnR" href="C:\Users\turbo\Documents\NYP\UX Design\prcatical 1 index.html\4fun.html" style='border: 1px solid #DAA520;'>Create</button>
+                      </div>
+                      </div>
+                      </form>
+                      </div>
+
+
+
+                        </li>
+
+                  </ul>
+</div>
+          </nav>
+  </head>
+  <body>
+    <div class="background-main-image">
+
+        <div class = "availabilityform">
+          <h1 class='availabilityformh1'>Availability</h1>
+
+          <div class="availabilitydivs">
+            <label class='availabilityformlabel' for="check-in">Check-In</label>
+            <input class='availabilityforminput' id='check-in' type= 'date' name="checkin" required>
+          </div>
+
+          <div class="availabilitydivs">
+            <label class='availabilityformlabel' for="check-out">Check-Out</label>
+            <input class='availabilityforminput' id='check-out' type="date"  name="checkout" required>
+
+          </div>
+
+          <div class="availabilitydivs">
+            <label class='availabilityformlabel' for="adult">Adult(s)</label>
+            <input class='availabilityforminput' type="number" id="adult" name="total_adults" placeholder="0" min="0" max='3'required>
+
+          </div>
+
+          <div class="availabilitydivs">
+            <label class='availabilityformlabel' for="child">Children(s)</label>
+            <input class='availabilityforminput' type="number" id="child" name="total_children" placeholder="0" min="0" max='3'required>
+          </div>
+
+          <button style='border: 2px solid #cba85e;'id = 'js' onclick="myFunction()" type="submit">Check for availability</button>
+        </div>
+      </div>
+
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("check-in");
+    var y = document.getElementById("check-out");
+    var Xval = x.value;
+    var Yval = y.value;
+       // get value
+    if (Xval > Yval) {
+      alert("Date is wrong");
+    }
+  }
+  </script>
+
+  <div class='promotion-main-entire'>
+    <div class="promo-main-container">
+
+        <div class="promo-main-columns">
+          <div class="promo-main-image-div">
+            <img class='promo-main-image' src="images\LongStay.jpg" alt="">
+          </div>
+          <div class="promo-main-text">
+            <h3 class='promo-main-intro'>Long Stay, Low Rate</h3>
+
+            <p>Enjoy special rates for Long Stays at Excellence Hotel.</p>
+          </div>
+          <div class="promobuttonclass">
+            <a class='promo-main-button' href='Promotion Secondary_Andrew.html' target="_blank">Learn more</a>
+          </div>
+        </div>
+
+        <div class="promo-main-columns">
+          <div class="promo-main-image-div">
+            <img class='promo-main-image' src="images\MasterCard.jpg" alt="">
+          </div>
+          <div class="promo-main-text">
+            <h3 class='promo-main-intro'>Mastercard Exclusive</h3>
+
+            <p>Mastercard Holders enjoy additional 9% discount on rooms.</p>
+          </div>
+          <div class="promobuttonclass">
+            <a class='promo-main-button' href='Promotion Secondary_Andrew.html' target="_blank">Learn more</a>
+          </div>
+        </div>
+
+        <div class="promo-main-columns">
+          <div class="promo-main-image-div">
+            <img class='promo-main-image' src="images\membersecondary.jpg" alt="">
+          </div>
+          <div class="promo-main-text">
+            <h3 class='promo-main-intro'>Members Exclusive</h3>
+
+            <p>Save additional 10% on rooms booked, exclusively for members.</p>
+          </div>
+          <div class="promobuttonclass">
+            <a class='promo-main-button' href='Promotion Secondary_Andrew.html' target="_blank">Learn more</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class='tm-ser1'>
+        <div class="tm-servicesection">
+           <div class="tm-service">
+                <img class="tm-serimage" src="https://github.com/sumitmangela/hotel/blob/master/images/bell.png?raw=true">
+               <div>
+                          <p class="b">Room Service</p>
+                          <p> Enjoy your stay with excellent and timely room service </p> </div>
+          </div>
+          <div class="tm-service">
+                <img class="tm-serimage" src="https://github.com/sumitmangela/hotel/blob/master/images/coffee.png?raw=true">
+               <div>
+                          <p class="b">Free Breakfast</p>
+                          <p> Enjoy Free breakfast every morning</p> </div>
+          </div>
+      </div>
+      <div class="tm-servicesection">
+
+          <div class="tm-service">
+                <img class="tm-serimage" src="https://github.com/sumitmangela/hotel/blob/master/images/car-front.png?raw=true">
+               <div>
+                          <p class="b">Free Parking</p>
+                          <p> No need to pay any extra charges to park your vehicle </p>
+              </div>
+          </div>
+          <div class="tm-service">
+                <img class="tm-serimage" src="https://github.com/sumitmangela/hotel/blob/master/images/spa.png?raw=true">
+               <div>
+                          <p class="b">Free Spa</p>
+                          <p> Relax at the inhouse Spa once every day of your stay </p>
+               </div>
+          </div>
+
+      </div>
+</div>
+
+    <div class="slider-room-flex">
+
+                    <div class="tm-rooms1">
+                      <div class='slider-img'>
+                        <img  src="images\ulyroom1.jfif">
+                      </div>
+                      <a href="uxdassignment_Ulysse.html">
+                      <div class='slidera'>
+                       The comfort
+                     </div>
+                     </a>
+                    </div>
+                        <div class="tm-rooms1">
+                          <div class='slider-img'>
+                        <img  src="images\ulyroom2.jfif">
+                          </div>
+                          <a href="uxdassignment_Ulysse.html">
+                          <div class='slidera'>
+                            The superior
+                          </div>
+                          </a>
+                    </div>
+                        <div class="tm-rooms1">
+                          <div class='slider-img'>
+                        <img  src="images\ulyroom3.jfif">
+                      </div>
+                      <a href="uxdassignment_Ulysse.html">
+                      <div class='slidera'>
+                            The deluxe
+                          </div>
+                          </a>
+                    </div>
+
+    </div>
+      <div class="banner">
+        <h1>Customer Reviews</h1>
+      </div>
+      <!-- Slideshow container -->
+
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <div class='faces'>
+          <img class="face" src="https://abdulsamad.xyz/La-Hotel/images/user-2.jpg">
+        </div>
+          <div class="person"><p class="name">Peter White</p>
+          </div>
+          <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          </div>
+          <div class="reviewtext"><p class="review">Excellence hotel is INCREDIBLE! The staff is warm and welcoming! I loved my stay at the hotel!</p>
+          </div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <div class='faces'>
+          <img class="face" src="https://abdulsamad.xyz/La-Hotel/images/user-1.jpg" > </div>
+          <div class="person"><p class="name"> Rick Novak</p>
+          </div>
+          <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          </div>
+          <div class="reviewtext"><p class="review">The beds were SUPER comfortable and the views were suprisingly decent for a budget hotel!</p>
+          </div>
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <div class='faces'>
+          <p class='centerthis'><img class="face" src="https://abdulsamad.xyz/La-Hotel/images/user-3.jpg"></p> </div>
+          <div class="person"> <p class="name"> Ashley Miller</p>
+          </div>
+          <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          </div>
+          <div class="reviewtext"><p class="review"> I enjoyed my stay. The beds and the facilities were nice. Moreover, the staff was also very welcoming.</p>
+          </div>
+          <div class="text"></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+        <!-- <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+
+    </body>
+            <script>
+            var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <section class="tm-makeres">
+      <div class="tm-res">
+         <div class="tm-resbutton">
+             <a href="uxdassignment_Ulysse.html"> <p>Make Reservation</p></a>
+          </div>
+          </div>
+      </section>
+  <!-- footer -->
+  <footer>
+    <div class='footer'>
+        <div class='footer-heading footer-1'>
+          <h2 class='footer-title'>Useful Links</h2>
+          <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+          <a class='footer-links' href="main_Parik.html">Reviews</a>
+          <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+          <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2 class='footer-title'>Forms</h2>
+          <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+          <a class='footer-links' href="UXFABOOKING_Cyrus.html" target="_blank">Facilities Booking Form</a>
+          <a class='footer-links' href="Promotion Form_Andrew.html" target="_blank">Contact Us Form</a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2 class='footer-title'>Members</h2>
+          <a class='footer-links' href="main_Parik.html">Sign Up</a>
+          <a class='footer-links' href="main_Parik.html">Login</a>
+          <a class='footer-links' href="#"></a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-4">
+          <h2 class='footer-title'>Connect With Us</h2>
+          <span>
+            <a href='https://www.instagram.com/ataromani/?hl=en'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</html>

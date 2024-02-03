@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Secondary Page</title>
+    <link rel="stylesheet" href="assignment.css">
+
+    <nav>
+        <div class="navbar-logo-img" id="logo">
+           <a class=''href='main_Parik.html' style='font-family:Times;text-decoration: none; color: black;'><img src="images\logo (2).png"> EXCELLENCE HOTEL </img></a>
+
+         </div>
+<div class='fag'>
+        <label for="drop" class="toggleR">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+              <li>
+
+
+
+                  <!-- First Tier Drop Down -->
+
+                <a class="buttonR" href="About Us page_RTB.html" style="color:black" >About Us</a>
+
+                <input type="checkbox" id="drop-1"/>
+
+
+
+                <li><a href="uxdassignment_Ulysse.html" style="color:black">Room & Suites</a></li>
+                <li><a href="UXfacility_Cyrus.html" style="color:black">Facilities</a></li>
+                <li><a href="Promotion Secondary_Andrew.html" style="color:black">Promotions</a></li>
+
+                <li>
+                <ul>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-2" class="toggleR">Sign Up/Log In</label>
+                <a href="#">Sign Up/Log In</a>
+                <input type="checkbox" id="drop-2"/>
+
+                </ul>
+                </li>
+                <!-- Log In Button -->
+                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Log In</button>
+
+                  <div id="id01" class="modalR">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                  <form class="modal-contentR" action="/action_page.php" >
+                  <div class="containerR">
+                  <h1>Log In</h1>
+                  <hr>
+                  <p><label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                  <p><label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                  <p><label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label></p>
+
+                  <div class="clearfixR">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnR">Cancel</button>
+                    <button type="submit" class="signupbtnR" href="Successful creation.html" >Log In</button>
+                  </div>
+                  </div>
+                  </form>
+                  </div>
+
+
+
+                    <!-- Sign Up Button -->
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Sign Up</button>
+
+                    <div id="id02" class="modalR">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                    <form class="modal-contentR" action="/action_page.php">
+                    <div class="containerR">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <p><label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" required></p>
+
+                    <p><label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                    <p><label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                    <p><label for="psw-repeat"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Re-Enter Password" name="psw-repeat" required></p>
+
+
+                    <div class="clearfixR">
+                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnR">Cancel</button>
+
+                      <button type="submit" class="signupbtnR" href="C:\Users\turbo\Documents\NYP\UX Design\prcatical 1 index.html\4fun.html">Create</button>
+                    </div>
+                    </div>
+                    </form>
+                    </div>
+
+
+
+                      </li>
+
+                </ul>
+</div>
+        </nav>
+
+  </head>
+  <body>
+    <div class="promotion-secondary">
+
+      <div class="promotion-secondary-header">
+        <h2>Promotions</h2>
+        <p class='promo-secondary-introduction'>Take advantage of our promotions to experience an affordable and memorable stay at Excellence Hotel!</p>
+      </div>
+
+      <div class="secondary-row">
+        <div class="promo-secondary-column secondary-col-1">
+          <img class='promo-secondary-img' src="Images/LongStay.jpg" alt="">
+        </div>
+
+        <div class="promo-secondary-column secondary-col-2">
+          <h2>Long Stay, Low Rate</h2>
+          <p>With a minimum booking of 7days, you get to enjoy the rate of $40/night on rooms from now till 31October!</p>
+          <p>Simply enter the code " <i>LongStay30</i> " at the booking page to enjoy this special rate.</p>
+          <p><i>*Terms & Conditions apply</i></p>
+          <!-- Trigger/Open The Modal -->
+          <button class="promotion-button" id="promotion-button-1">Read More</button>
+          <!-- The Modal -->
+          <div class="promotion-modal" id='promotion-modal-1'>
+            <!-- Modal content -->
+            <div class="promotion-modal-content">
+              <div class="promotion-modal-header">
+                <span class="promotion-close" id='promotion-close-1'>×</span>
+                <h2>Long Stay, Low Rate</h2>
+              </div>
+              <div class="promotion-modal-body">
+                <img class='promo-modal-image' src="Images/LongStay.jpg" alt="">
+              </div>
+              <div class="promotion-modal-description">
+                <br>
+                <p>With a minimum booking of 7days, you get to enjoy the rate of $40/night on rooms from now till 31October!</p>
+                <p>Simply enter the code " <i>LongStay30</i> " at the booking page to enjoy this special rate.</p>
+                <p>Terms and Conditions:</p>
+                <ul><i>
+                  <li>The discounted rate applies for direct bookings via ExcellenceHotel.com website.</li>
+                  <li>Promo code cannot be used in conjunction with another promo code.</li>
+                  <li>Bookings are under a non-refundable policy.</li>
+                  <li>Change of dates is subjected to availability.</li>
+                </i>
+                </ul>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-row">
+        <div class="promo-secondary-column secondary-col-1">
+          <img class='promo-secondary-img' src="Images/MasterCard.jpg" alt="">
+        </div>
+
+        <div class="promo-secondary-column secondary-col-2">
+          <h2>Mastercard holders Exclusive</h2>
+          <p>Mastercard members enjoy an additional 9% discount on rooms!</p>
+          <p>Simply enter the promo code " <i>MasterC2021</i> " at the booking page to enjoy this perk. Remember to use your Mastercard to check out your hotel booking.</p>
+          <p><i>*Terms & Conditions apply</i></p>
+
+          <!-- Trigger/Open The Modal -->
+          <button class="promotion-button" id="promotion-button-2">Read More</button>
+
+          <!-- The Modal -->
+          <div class="promotion-modal" id="promotion-modal-2">
+
+            <!-- Modal content -->
+            <div class="promotion-modal-content">
+              <div class="promotion-modal-header">
+                <span class="promotion-close" id='promotion-close-2'>×</span>
+                <h2>MasterCard Holders Exclusive</h2>
+              </div>
+              <div class="promotion-modal-body">
+                <img class='promo-modal-image' src="Images/MasterCard.jpg" alt="">
+
+              </div>
+              <div class="promotion-modal-description">
+                <br>
+                <p>Mastercard members enjoy an additional 9% discount on rooms!</p>
+                <p>Simply enter the promo code " <i>MasterC2021</i> " at the booking page to enjoy this perk. Remember to use your Mastercard to check out your hotel booking.</p>
+                <p>Terms and Conditions:</p>
+                <ul><i>
+                  <li>The discounted rate applies for direct bookings via ExcellenceHotel.com website.</li>
+                  <li>Payment by Mastercards only</li>
+                  <li>Promo code cannot be used in conjunction with another promo code.</li>
+                  <li>Bookings are under a non-refundable policy.</li>
+                  <li>Change of dates is subjected to availability.</li>
+                </i>
+                </ul>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-row">
+        <div class="promo-secondary-column secondary-col-1">
+          <img class='promo-secondary-img' src="Images/membersecondary.jpg" alt="">
+        </div>
+
+        <div class="promo-secondary-column secondary-col-2">
+          <h2>Members Exclusive</h2>
+          <p>By signing up as a member, you will be entitled to an additional 10% discount on stays!</p>
+          <p>Simply enter the promo code " <i>Members2021</i> " at the booking page to receive this benefit.</p>
+          <p><i>*Terms & Conditions apply</i></p>
+
+                    <!-- Trigger/Open The Modal -->
+          <button class="promotion-button" id="promotion-button-3">Read More</button>
+
+          <!-- The Modal -->
+          <div class="promotion-modal" id="promotion-modal-3">
+
+            <!-- Modal content -->
+            <div class="promotion-modal-content">
+              <div class="promotion-modal-header">
+                <span class="promotion-close" id='promotion-close-3'>×</span>
+                <h2>Members Exclusive</h2>
+              </div>
+              <div class="promotion-modal-body">
+                <img class='promo-modal-image' src="Images/membersecondary.jpg" alt="">
+
+              </div>
+              <div class="promotion-modal-description">
+                <br>
+                <p>By signing up as a member, you will be entitled to an additional 10% discount on stays!</p>
+                <p>Simply enter the promo code " <i>Members2021</i> " at the booking page to receive this benefit.</p>
+                <p>Terms and Conditions:</p>
+                <ul><i>
+                  <li>The discounted rate applies for direct bookings via ExcellenceHotel.com website.</li>
+                  <li>Promo code cannot be used in conjunction with another promo code.</li>
+                  <li>Bookings are under a non-refundable policy.</li>
+                  <li>Change of dates is subjected to availability.</li>
+                </i>
+                </ul>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+      document.getElementById('promotion-button-1').addEventListener('click', function() {
+        document.getElementById('promotion-modal-1').style.display = 'block'
+        console.log('1open') //Delete if not needed, used for checking
+      })
+      document.getElementById('promotion-button-2').addEventListener('click', function() {
+        document.getElementById('promotion-modal-2').style.display = 'block'
+        console.log('2open')
+      })
+      document.getElementById('promotion-button-3').addEventListener('click', function() {
+        document.getElementById('promotion-modal-3').style.display = 'block'
+        console.log('3open')
+      })
+
+      document.getElementById('promotion-close-1').addEventListener('click', function() {
+        document.getElementById('promotion-modal-1').style.display = 'none'
+        console.log('1close')
+      })
+      document.getElementById('promotion-close-2').addEventListener('click', function() {
+        document.getElementById('promotion-modal-2').style.display = 'none'
+        console.log('2close')
+      })
+
+      document.getElementById('promotion-close-3').addEventListener('click', function() {
+        document.getElementById('promotion-modal-3').style.display = 'none'
+        console.log('3close')
+      })
+
+    </script>
+  </body>
+  <!-- footer -->
+  <footer>
+    <div class='footer'>
+        <div class='footer-heading footer-1'>
+          <h2 class='footer-title'>Useful Links</h2>
+          <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+          <a class='footer-links' href="main_Parik.html">Reviews</a>
+          <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+          <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2 class='footer-title'>Forms</h2>
+          <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+          <a class='footer-links' href="UXFABOOKING_Cyrus.html" target="_blank">Facilities Booking Form</a>
+          <a class='footer-links' href="Promotion Form_Andrew.html" target="_blank">Contact Us Form</a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2 class='footer-title'>Members</h2>
+          <a class='footer-links' href="main_Parik.html">Sign Up</a>
+          <a class='footer-links' href="main_Parik.html">Login</a>
+          <a class='footer-links' href="#"></a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-4">
+          <h2 class='footer-title'>Connect With Us</h2>
+          <span>
+            <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</html>

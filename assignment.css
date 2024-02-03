@@ -1,0 +1,2508 @@
+ /*/Ulysse css /*/
+
+:root {
+    --main-font-1: "Josefin Sans Regular", sans-serif;
+    --main-font-2: "Josefin Sans Light", sans-serif;
+    --main-color: #000000;
+    --secondary-color: #FFEFD5;
+    --bg-color : #F5F5F5;
+    --white-color: #fff;
+}
+
+body {
+   font-family: "Josefin Sans Regular", sans-serif;
+   background-color:#F5F5F5;
+   color: black;
+}
+
+/* Andrew's Promotion form code end here */
+/* Promotion Validation Codes start here */
+.promotionvalidation {
+  overflow-wrap: anywhere;
+  margin: auto;
+  width: 70%;
+  line-height: 1.3;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+
+.promotionvalidationheader {
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.promotionvalidationsubmission{
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 5px 20px;
+  margin-right:10px;
+  height: 30px;
+  cursor: pointer;
+  width: auto;
+  transition: 0.5s;
+}
+
+.promotionvalidationsubmission:hover{
+  color:#cba85e;
+  border: 1px solid #cba85e;
+}
+
+/* Footer Codes */
+.footer {
+  display: flex; /*makes the 4divs side by side*/
+  justify-content: center; /*aligns all items to center*/
+  flex-wrap: wrap; /*makes the divs stack on one another when zoomed in*/
+  margin: 0 auto;
+  overflow-wrap: anywhere;
+  font-family: sans-serif;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 10px;
+  color: black;
+}
+
+.footer-title{ /* distance btw header and the content */
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+
+.footer-links{ /* links */
+  line-height: 1.6;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links:hover { /* links hover */
+  color:#cba85e;
+  text-decoration: underline;
+  transition: 0.3s ease-out;
+}
+
+.footer-a{ /* icons */
+  justify-content: flex-start; /* makes them start from left */
+  width: 30px; /* fixed width and height */
+  height:30px;
+}
+
+@media (max-width: 905px) {
+  .footer{
+    flex-direction: column;
+  }
+  .footer-title{
+    margin-bottom: 0px;
+  }
+}
+
+/* Footer end*/
+.rooms-list {
+    color: var(--main-color);
+    padding: 0;
+  }
+
+.rooms-list select {
+    padding: .6rem;
+    border: .1rem solid var(--main-color);
+    outline: none;
+    background: transparent;
+    font-family: var(--main-font-1);
+}
+.rooms-list img{
+    width: 100%;
+}
+
+.rooms-list, .room-col-2:not(:last-child) {
+    margin-right: 8rem;
+}
+
+.rooms-list, .room-row {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .rooms-list, .room-row {
+        flex-direction: column;
+    }
+
+    .rooms-list, .room-col-2:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+
+
+.room-info {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white-color);
+}
+
+
+.room-info div {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.room-info h4 {
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-size: 30px;
+}
+
+.room-info p {
+    line-height: 1.3;
+    font-family: var(--main-font-2);
+    font-size: 17px;
+}
+
+.room-info a {
+    color: black;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px;
+    padding-bottom: .5rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.room-info a:hover {
+  color: #cba85e;
+  border: 1px solid #cba85e;
+}
+.room-container {
+    width: 100%;
+    max-width: 160rem;
+    padding: 0 2.4rem;
+    margin: 0 auto;
+}
+
+.room-container-medium {
+    max-width: 100rem;
+}
+
+.room-row {
+    display: flex;
+    align-items: center;
+  }
+
+.room-row-2 {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 8rem auto 5rem;
+      flex-direction: row !important;
+  }
+
+.room-col-2 {
+    margin-bottom: 5rem;
+    flex-basis: 50%;
+    min-width: 30rem;
+}
+
+ /*/ for the section /*/
+
+
+ .room-features, .room-row {
+     justify-content: space-between;
+ }
+
+ .room-features {
+     background-color: var(--secondary-color);
+ }
+
+ .room-features i {
+     color: #ce8571;
+     font-size: 2.8rem;
+     margin-bottom: 1.5rem;
+ }
+
+ .room-features h4 {
+     text-transform: capitalize;
+     font-weight: 500;
+     font-size: 2rem;
+     letter-spacing: 0;
+     color: var(--main-color);
+ }
+
+ .room-features p {
+     font-family: var(--main-font-2);
+     color: var(--main-color);
+ }
+
+ .room-col-3 {
+     flex-basis: 30%;
+     min-width: 20rem;
+     margin-bottom: 5rem;
+ }
+
+
+
+ .room-price {
+       font-size: 4rem;
+       margin: 1.5rem;
+   }
+
+
+   #room-cost {
+    font-size: 45px;
+  }
+
+
+  #room-smaller {
+    font-size: 25px;
+  }
+
+   html {
+       color: var(--white-color);
+       font-size: 10px;
+       font-family: var(--main-font-1);
+       scroll-behavior: smooth;
+   }
+
+   .room-features main img {
+       width: 100%;
+   }
+
+   section {
+       padding: 8rem 0;
+   }
+
+   .room-features a {
+       text-decoration: none;
+   }
+
+   .room-features p {
+       font-size: 1.9rem;
+       font-family: var(--main-font-2);
+       line-height: 1.5;
+       font-weight: 200;
+   }
+
+
+   .rooms-list h2 {
+       font-size: 3.5rem;
+       margin: 2rem 0;
+       line-height: 1.3;
+   }
+
+
+   .rooms-list h4 {
+       font-size: 1.6rem;
+       font-weight: 700;
+       margin-bottom: 1.6rem;
+   }
+
+   .rooms-list div {
+   	text-align: center;
+   	}
+
+   .room-room {
+       background-color: var(--bg-color);
+   }
+
+
+  /* services */
+
+  .room-tm-serimage{
+      display: inline-block;
+      max-width: 40%;
+      width: 10%;
+      height: auto;
+  padding-bottom: 0%;
+
+
+  }
+/* form page css */
+
+
+                              /*form page to be edited*/
+
+
+.bookformentire{
+margin: 0 auto;
+width: 65%;
+background-color: #F5F5F5;
+padding: 30px; /* padding around the form and the border */
+border: 1px solid black;
+color: black;
+font-family: "Josefin Sans Regular", sans-serif;
+box-sizing: border-box;
+text-align: left;
+margin: auto ;
+}
+
+}
+.bookformheading {
+padding-top: 20px; /* padding btw top n bottom of form border and brief */
+padding-bottom: 50px;
+}
+
+.bookformbrief {
+padding-bottom: 10px;
+}
+.bookformbrief h3{
+font-size: 1.75rem;
+}
+.bookformentire p{
+font-size: 1.25rem;
+}
+
+  .bookformaltbrief {
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+.bookformfdist {
+padding: 12px 0; /* size of text boxes */
+border-radius: 4px;
+}
+
+.bookformlabel{
+  font-size: 1.25rem;
+}
+
+.bookformsizing {
+border: 1px solid #ccc;  /* border of the textboxes */
+padding: 12px;
+width: 37.5%;
+}
+
+.bookformtextboxarea {
+  width: 80%;
+border: 1px solid #ccc;
+overflow: auto;
+}
+/* submission */
+.bookformsubmit{
+margin-top: 20px;
+text-align: center;
+background: grey;
+color: white;
+width: 40%;
+height: 40px;
+display: grid; /* makes the submit button in the center */
+}
+
+.formvalidation {
+  overflow-wrap: anywhere;
+  margin: 0 auto;
+  width: 70%;
+  background-color: #F5F5F5;
+  line-height: 1.3;
+  padding: 10px 30px;
+}
+
+.formsubmission h1 {
+  margin: 0 auto;
+  width: 65%;
+  color: blue;
+  font-family: "Josefin Sans Regular", sans-serif;
+  text-align: left;
+  margin: auto ;
+  font-size: 3rem;
+  background-color: #F5F5F5;
+  font-weight: bold;
+}
+
+.formsubmission h2 {
+  margin: 0 auto;
+  width: 65%;
+  color: black;
+  font-family: "Josefin Sans Regular", sans-serif;
+  text-align: left;
+  margin: auto ;
+  font-size: 1.5rem;
+  background-color: #F5F5F5;
+  font-weight: bold;
+}
+
+.formsubmission p {
+  margin: 0 auto;
+  width: 65%;
+  color: black;
+  font-family: "Josefin Sans Regular", sans-serif;
+  text-align: left;
+  margin: auto ;
+  font-size: 1.75rem;
+  background-color: #F5F5F5;
+}
+
+
+  form .bookformsubmit {                                        /* Submit button */
+    border-radius: 3px;
+    border: 1px solid #336895;
+    box-shadow: inset 0 1px 0 #8dc2f0;
+    width: 242px;
+    height: 40px;
+    margin-top: 20px;
+
+    background: linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+    background: -o-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+    background: -moz-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+    background: -webkit-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+    background: -ms-linear-gradient(bottom, #4889C2 0%, #5BA7E9 100%);
+
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #336895;
+
+    font-size: 13px;
+    float: center;
+  }
+
+  form .bookformsubmit:hover {
+    background: linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+    background: -o-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+    background: -moz-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+    background: -webkit-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+    background: -ms-linear-gradient(bottom, #5c96c9 0%, #6bafea 100%);
+  }
+
+  form .bookformsubmit:active {
+    background: linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+    background: -o-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+    background: -moz-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+    background: -webkit-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+    background: -ms-linear-gradient(bottom, #5BA7E9 0%, #4889C2 100%);
+
+    box-shadow: inset 0 0 2px rgba(0,0,0, .3), 0 1px 0 white;
+  }
+
+                    /* form field */
+  .bookformdist input[type=text], .bookformdist input[type=number], .bookformdist input[type=date], .bookformdist input[type=time]{ /*ISSUE*/
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #white;
+  border: 1px solid #ccc;
+}
+
+/* modal for form booking*/
+
+/* The Modal (background) */
+.bookformmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.bookformmodal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.bookformclose {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.bookformclose:hover,
+.bookformclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookformmodal-header {
+  padding: 2px 16px;
+  background-color: #FFEFD5;
+  color: #000000;
+}
+
+.bookformmodal-body {padding: 2px 16px;}
+
+
+
+
+/* FAQ segment */
+
+.faq-page {
+    color: var(--main-color);
+    font-family: var(--main-font-2);
+    padding-bottom: 5rem;
+}
+
+.faq-header {
+    text-align: center;
+    max-width: 57rem;
+    width: 200%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+.faq-header h2 {
+    font-family: var(--main-font-1);
+}
+
+.faq-table .col-2 {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.faq-table .col-2 div {
+    margin-bottom: 4rem;
+}
+
+
+/*/ drop down java /*/
+/* Dropdown Button */
+.faqdropbtn {
+  background-color: #FFEFD5;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 1000px;
+}
+
+/* Dropdown button on hover & focus */
+.faqdropbtn:hover, .dropbtn:focus {
+  background-color: #DEC8A4;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.faqdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.faqdropdown-content {
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  min-width: 700px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.faqdropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+.faqdropdown-content ul {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+/* Change color of dropdown links on hover */
+.faqdropdown-content p:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.faqshow {display:block;}
+
+
+  /*/Andrew css /*/
+  * {
+    font-family: "Josefin Sans Regular", sans-serif;
+  }
+
+  /* Main Promotion CSS */
+  .promotion-main-entire { /* Do not touch this code, it's the div for the entire 3 images*/
+    width: 100%;
+    background-color: #FFEFD5; /* Change the color of the entire row */
+    color : black;
+    padding: 50px 0px;
+  }
+
+  .promo-main-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;   /* IMPORTANT USE THIS IF U WANNA CHANGE THE WIDTH OF THE MAIN SIZE*/
+  }
+
+  .promo-main-columns {
+    border: 1px solid lightgrey;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white; /* Change the color of the 3 boxes */
+  }
+
+  .promo-main-image {
+    width: 100%;
+  }
+
+  .promo-main-text {
+    line-height: 1.2;
+    font-size: 15px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .promobuttonclass {
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .promo-main-button {
+    border: 1px solid black;
+    background-color: white; /* PROMOTIONBUTTON */
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .promo-main-button:hover {
+    border: 1px solid #cba85e;
+    color: #cba85e;
+  }
+
+  @media (max-width: 1024px) {
+    .promo-main-image{
+      width: 270px
+    }
+  }
+
+
+  @media (max-width: 905px){
+    .promo-main-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .promo-main-image {
+      width: 300px
+    }
+    .promo-main-text {
+      font-size: 15px;
+      height: 120px;
+    }
+    .promobuttonclass {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .promo-main-image {
+      width: 90%;
+    }
+    .promo-main-intro {
+      font-size: 15px;
+    }
+    .promo-main-text {
+      font-size: 10px;
+      height: 100px;
+    }
+    .promobuttonclass {
+      font-size: 10px;
+    }
+  }
+
+  /* Secondary Promotion */
+
+  .promotion-secondary {
+    margin: 0 auto;
+    font-size: 17px;
+  }
+
+  .promotion-secondary-header {
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+  }
+  .promo-secondary-introduction {
+    font-size: 20px;
+  }
+  .secondary-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 20px 0;
+    line-height: 1.3;
+  }
+
+  .secondary-row:nth-child(even) {
+    background-color: #FFEFD5;
+  }
+
+  .promotion-button { /* PROMOTIONBUTTON */
+    border: 1px solid black;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+    width: auto;
+    transition: 0.5s;
+  }
+
+  .promotion-button:hover {
+    border: 1px solid #cba85e;
+    color: #cba85e;
+  }
+  .secondary-col-1 { /* image */
+    margin-right: 10px;
+    width: 550px;
+  }
+
+  .promo-secondary-img {
+    width: 100%;
+  }
+
+  .secondary-col-2 { /* text */
+    width: 400px;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: 100;
+  }
+
+  /* The Modal (background) */
+  .promotion-modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      left: 0;
+      top: 0;
+      padding-top: 20px;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow-wrap: break-word;
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .promotion-modal-content {
+      background-color: #fefefe;
+      text-align: center;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 60%;
+  }
+
+  .promotion-modal-description {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .promo-modal-image {
+    width: 40%;
+  }
+
+  .promotion-button:hover {
+    cursor: pointer;
+  }
+  /* The Close Button */
+  .promotion-close {
+      color: black;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+
+  .promotion-close:hover /*, .close:focus */{
+      color: grey;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .promotion-modal-header {
+      padding: 2px 16px;
+      color: black;
+      text-align: center;
+  }
+
+  .promotion-modal-body {
+    padding: 2px 16px;
+  }
+
+
+  @media (max-width: 905px) { /* 175% zoom in / tablet */
+    .secondary-col-1, .secondary-col-2 {
+      padding: 0px;
+      width: 95%;
+      border: none;
+    }
+    .promo-secondary-header {
+      font-size: 30px;
+    }
+    .promo-secondary-img {
+      height: 90%;
+      padding-left: 5px;
+    }
+    .promo-modal-image {
+      width: 100%;
+    }
+    .modal-content {
+      width: 90%;
+    }
+    .promotion-modal-description {
+      padding: 6px;
+    }
+  }
+
+
+  /* Promotion form code start here */
+  .promotion-form{
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    margin: 0 auto;
+    width: 65%;
+    margin-bottom: 10px;
+    background-color: #F5F5F5;
+    padding: 20px 30px; /* padding around the form and the border */
+    border: 1px solid black;
+    color: black;
+    max-width: 1300px;
+  }
+
+  .promotion-form-div {
+    padding: 7px 0; /* size of text boxes */
+  }
+
+  .promotion-form-sizing {
+    border: 1px solid #ccc;  /* border of the textboxes */
+    padding: 12px;
+    width: 40%;
+  }
+
+  .promotion-label {
+    font-size: 15px;
+  }
+  /* Do not touch these codes - used for the red underline when theres errors */
+  #promoerror1{
+    display: none;
+    border-top: 3px solid red;
+    width: 40%;
+    padding-right: 26px;
+  }
+
+  #promoerror2{
+    display: none;
+    border-top: 3px solid red;
+    width: 40%;
+    padding-right: 26px;
+  }
+
+  #promoerror4{
+    display: none;
+    border-top: 3px solid red;
+    width: 40%;
+    padding-right: 26px;
+  }
+
+  #promoerror5{
+    display: none;
+    border-top: 3px solid red;
+    width: 40%;
+    padding-right: 26px;
+  }
+
+  .promotion-form-textbox-sizing {
+    width: 80%;
+    border: 1px solid #ccc;
+    overflow: auto;
+  }
+
+  .promotion-submit{
+    text-align: center;
+    background: white;
+    color: black;
+    width: 40%;
+    padding: 5px 20px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.5s;
+  }
+
+  .promotion-submit:hover{
+    color:#cba85e;
+    border: 1px solid #cba85e;
+  }
+
+  @media (max-width: 905px) {
+    .promotion-form {
+      border: none;
+    }
+    .promotion-form-sizing {
+      margin-top: 0;
+    }
+    .promotion-form-textbox-sizing {
+      width: 90%;
+    }
+    .promotion-submit {
+      width: 90%;
+    }
+    .promotion-form {
+      width: 100%;
+      background-color: #F5F5F5;
+    }
+    .promotion-form-sizing {
+      width: 90%;
+    }
+    #promoerror1, #promoerror2, #promoerror3, #promoerror4, #promoerror5 {
+      width: 90%;
+    }
+    .promotion-form-textbox-sizing {
+      padding: 0px 12px;
+    }
+  }
+  }
+
+
+/*Andrew code end here*/
+
+
+
+/*/ cryus css /*/
+/* html, body */
+/* hmm booking */
+#htmlFA, #bodyFA {
+min-height: 100%;
+}
+/* body,div,form,input,select,textarea,p */
+#bodyFA, .divFA, #jenny, .du, #ohhhh, #textareaFA, .pFA {
+padding: 0;
+margin: 0;
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 14px;
+color: #666;
+line-height: 22px;
+}
+.svolach {
+position: absolute;
+margin: 0;
+line-height: 42px;
+font-size: 40px;
+color: black;
+z-index: 2;
+}
+#testboxFA {
+display: flex;
+justify-content: center;
+align-items: center;
+height: inherit;
+padding: 20px;
+}
+
+#hmm::-webkit-outer-spin-button,
+#hmm::-webkit-inner-spin-button{
+  -webkit-appearance:none;
+  margin: 0;
+}
+#jenny {
+width: 100%;
+padding: 20px;
+border-radius: 6px;
+background: #fff;
+box-shadow: 0 0 5px;
+}
+.git {
+position: relative;
+height: 200px;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #FFEFD5;
+border-radius: 8px;
+}
+.git::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+}
+#selectfacility {
+  height: 37px;
+  width: 21%;
+}
+.du, #ohhhh, #textareaFA {
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+#textareaFA{
+  width: 40%;
+}
+#bd{
+  border-radius: 3px;
+}
+.du {
+width: 20%;
+height: 25px;
+padding: 5px;
+}
+
+#textareaFA {
+width: calc(50% - 12px);
+padding: 5px;
+
+}
+.item input:hover, .item select:hover, .item textarea:hover {
+/* border: 2px solid transparent */
+box-shadow: 0 0 6px 0 #cba85e;
+color: #cba85e;
+}
+.item {
+position: relative;
+margin: 10px 0;
+}
+#dateFA::-webkit-calendar-picker-indicator {
+right: 1%;
+z-index: 2;
+opacity: 20;
+cursor: pointer;
+}
+.btn-block {
+margin-top: 10px;
+text-align: center;
+}
+#buttonFA {
+width: 200px;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+font-size: 16px;
+color: black;
+cursor: pointer;
+font-weight: 600;
+background-color: white;
+transition: 0.5s;
+}
+#buttonFA:hover {
+color: #cba85e;
+box-shadow: 0 0 6px #cba85e;
+font-weight: 600;
+border: 1px solid #cba85e;
+}
+#bd {
+padding: 10px;
+font-family: Roboto, Arial, sans-serif;
+font-size: 18px;
+color: black;
+background-color: #FFEFD5;
+}
+#FA1{
+  display: none;
+  border-top: 3px solid red;
+  width: 40%;
+  padding-right: 26px;
+}
+#FA2{
+  display: none;
+  border-top: 3px solid red;
+  width: 40%;
+  padding-right: 26px;
+}
+#FA3{
+  display: none;
+  border-top: 3px solid red;
+  width: 40%;
+  padding-right: 26px;
+}
+#FA4{
+  display: none;
+  border-top: 3px solid red;
+  width: 40%;
+  padding-right: 26px;
+}
+#FA5{
+  display: none;
+  border-top: 3px solid red;
+  width: 40%;
+  padding-right: 26px;
+}
+#FA6{
+  display: none;
+  border-top: 3px solid red;
+  width: 40%;
+  padding-right: 26px;
+}
+#FA1, #FA2, #FA3, #FA4, #FA5,#FA6 {
+  width: 90%;
+}
+/* facility css  */
+
+#bodyf{
+  background-color: #F5F5F5;
+  margin: 0;
+}
+.giztmeken{
+  position: relative;
+  border-radius: 6px;
+  padding-bottom: 0.1px;
+  width: auto;
+  height: 10px;
+  background-size: cover;
+  background-color: var(--primary-color);
+  justify-content: center;
+  display: flex;
+  align-items:center;
+  text-align: center;
+}
+
+.yalniz{
+  position: absolute;
+  line-height: 42px;
+  font-size: 40px;
+  color: black;
+  z-index: 2;
+  letter-spacing: 2px;
+  font-weight: 500px;
+}
+
+.tm-exp1{
+    background: #FFEFD5;
+    height:500px;
+    width: auto;
+    padding: 30px;
+}
+.tm-exp2{
+  background: var(--primary-color);
+  height:490px;
+  width: auto;
+  padding:30px;
+}
+
+.tm-exp1::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.tm-exp2::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+
+.tm-exp1 p{
+    float: right;
+    padding-top: 50px;
+    max-width: 30%;
+    font-size: 3.5vw;
+    color: black;
+    display: flex;
+    padding-right: 200px;
+}
+
+.tm-exp2 p{
+    float: right;
+    padding-top: 50px;
+    max-width: 30%;
+    font-size: 3.5vw;
+    color: black;
+    display: flex;
+    padding-right: 200px;
+}
+
+.tm-exp1 img{
+    display: flex;
+    float: left;
+    max-width: 60%;
+    width: 545px;
+    height: 350px;
+    padding: 50px;
+    padding-top: 60px
+
+}
+
+.tm-exp2 img{
+    display: flex;
+    float: left;
+    max-width: 60%;
+    width: 545px;
+    height: 350px;
+    padding: 50px;
+    padding-top: 60px
+
+}
+
+
+.tm-expsection::after{
+  content: ".";
+     font-size: xx-small;
+    visibility: hidden;
+    height: 20px;
+}
+.tm-footer{
+    display: block;
+    padding: 20px;
+    position: relative;
+    background:white;
+    height:auto;
+    text-align: center;
+}
+
+.tm-us{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+    margin: 2% 0 2% 4%;
+}
+
+
+
+.tm-us .bold{
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-bottom: 4%;
+    letter-spacing: auto;
+}
+
+.tm-us p{
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.tm-media{
+   display: inline;
+   margin: 0 0 0 59%;
+
+
+}
+.tm-media img{
+  margin: 0.5%;
+    width: 3%;
+    height: auto;
+
+}
+
+.tm-up{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 3%;
+    height: auto;
+}
+
+.tm-review:focus{
+    outline: none;
+}
+
+.tm-revcon:focus{
+    outline: none;
+}
+
+.donut{
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+}
+
+.wow{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom: 100px;
+    background-color:var(--secondary-color) ;
+    border-radius: 3px;
+    font-size: 20px
+  }
+
+  #hachiwa {
+      border: 1px solid black;
+      background-color: white;
+      font-weight: 550;
+      color: black;
+      padding: 5px 20px;
+      cursor: pointer;
+      height: 40px;
+      width: 220px;
+      font-size: 20px;
+      transition: 0.5s;
+    }
+
+
+#hachiwa:hover{
+  border: 1px solid #cba85e;
+  font-weight: 600;
+  color: #cba85e;
+}
+
+/*/ parik css /*/
+
+.background-main-image {
+  width: 100%;
+  height: 620px;
+  background-image:url("./Images/lobby_parik.jpg");
+  /*/ 1422x865/*/
+}
+
+/* Availability Form */
+
+.availabilityform {
+  padding:10px 30px;
+  background-color: rgba(77, 71, 70,0.5);
+  position: absolute;
+  top: 70px;
+  right: 0;
+  overflow: auto;
+  margin-right: 10px;
+}
+
+.availabilityformh1 {
+  padding: 0px;
+	text-align:center;
+  font-size:60px;
+	font-family: 'Bree Serif', 'serif';
+  color: white;
+}
+
+.availabilitydivs {
+  color: white;
+  margin: 8px 0px;
+}
+
+.availabilitydivs label{
+  font-size: 20px;
+}
+
+.availabilityformlabel{
+  font-family: 'Nanum Gothic';
+  font-size: 1.25em;
+}
+
+.availabilityforminput {
+  border: 2px solid #777;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  padding: 10px;
+  width: 90%;
+}
+
+#js {
+  height: 50px;
+  background: white;
+  border: none;
+  color: black;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+#js:hover {
+  border-bottom: 2px solid #cba85e;
+}
+
+@media (max-width: 905px) {
+  .availabilityform {
+    position: absolute;
+    top: 120px;
+    margin-top: 70px;
+    width: 40%;
+    margin-right: 10px;
+  }
+  .availabilityformh1 {
+    font-size: 30px;
+  }
+  .background-main-image {
+    height: 600px;
+  }
+}
+
+/* main room page */
+.slider-room-flex{
+  background: #FFEFD5;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+  }
+
+.tm-rooms:focus {
+    outline:;
+}
+.tm-rooms a:focus {
+    outline: none;
+}
+.slidera{
+  width: 50%;
+  margin: auto;
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+
+.slidera:hover {
+  color: #cba85e;
+  border: 1px solid #cba85e;
+}
+
+
+.tm-rooms1{
+    display: block;
+    background: var(--bg-color);
+    width: 0%;
+    margin: 30px;
+}
+
+.slider-img {  /* Makes img centralized */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tm-rooms1 img{
+  width: 100%;
+}
+
+
+.tm-rooms1 p{
+      font-size: 2.5vw;
+      color: black;
+      text-align: center;
+      padding: 1%;
+  }
+
+  .tm-rooms1 a{
+      text-decoration: none;
+  }
+
+
+  @media (min-width: 1024px) {
+    .tm-rooms1 {
+      width: 600px;
+    }
+    .tm-rooms1 p{
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 905px) {
+    .tm-rooms1 {
+      width: 90%;
+      margin: 10px;
+    }
+    .slider-room-flex {
+      padding: 20px 0px;;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .tm-rooms1 {
+      margin: 5px 5px;
+    }
+
+  }
+
+  /* Make reservation */
+
+  .tm-res{
+      background: #ffefd5;
+      padding: 20px;
+  }
+
+
+  .tm-resbutton p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    /* center the element */
+    font-size: 20px;
+    /* it takes 2.5% of the page width */
+    color: black;
+    background: white;
+    font-weight: 600;
+    /* bold */
+    border: 1px solid black;
+    font-size: 25px;
+    transition: 0.5s;
+  }
+
+  .tm-resbutton a{
+      text-decoration: none;
+  }
+
+  .tm-resbutton p:hover {
+    color: #cba85e;
+    border: 1px solid #cba85e;
+  }
+
+@media (max-width: 905px) {
+  .tm-resbutton p{
+    font-size: 20px;
+    padding: 30px;
+  }
+  .tm-resbutton {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tm-resbutton p{
+    font-size: 10px;
+    padding: 10px 30px;
+  }
+}
+  /* Slideshow container */
+  .slideshow-container {
+    width: 80%;
+    position: relative;
+    bottom:00px;
+    margin: auto;
+    background-color:#White;
+    outline-style: double;
+    outline-color:grey;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display:none;
+    padding: 10px;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #white;
+  }
+  .prev:hover, .next:hover{
+    color:#cba85e;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #black;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    position: relative;
+    bottom:00px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .banner{
+    text-align: center;
+    /* text-decoration: underline; */
+    color: black;
+    font-size: 30px;
+  }
+
+@media (max-width: 905px) {
+  .banner {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    font-size: 30px;
+  }
+}
+  .face{
+    border-radius: 50%;
+    width: 5rem;
+  }
+  .faces {
+    text-align: center;
+  }
+  .name{
+    font-size:2rem;
+    font-weight:500;
+    color: black;
+    text-align: center;
+  }
+  .stars{
+    color: orange;
+    justify-content: center;
+    text-align: center;
+    font-size: 17.5px;
+  }
+  .review{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 525;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    letter-spacing: 0.1rem;
+    color: #black;
+  }
+  .reviewtext {
+    text-align: center;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 905px) {
+    .slideshow-container {
+      width: 100%;
+    }
+    .name, .review {
+      font-size: 15px;
+    }
+  }
+
+@media (min-width: 1024px) {
+  .slideshow-container {
+    width: 1000px;
+  }
+}
+/* main facilities page */
+
+.tm-ser1 {
+  margin: 10px;
+}
+
+.tm-service{
+    max-width: 30%;
+    width: 30%;
+    margin: 1.5% 12% 1.5% 10%;
+    /* top right bottom left margin */
+}
+
+.tm-servicesection{
+  display: flex;
+      /* make element align and fit in the page */
+    }
+
+.tm-serimage{
+    display: inline-block;
+    max-width: 20%;
+    width: 10%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.tm-service div{
+    display: inline-block;
+    max-width: 75%;
+    padding: 5%;
+}
+
+.tm-service p{
+   font-size: 1.5vmax;
+      /* it scales according to whichever width or height gets larger */
+
+}
+.tm-service .b{
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+
+@media (min-width: 1024px){
+  .tm-ser1 {
+    width: 1000px;
+    margin: auto;
+  }
+  .tm-service p{
+    font-size: 20px;
+  }
+}
+
+  /* Feedback */
+
+
+  .feedback{
+  		width: 65%;
+      max-width: 1000px;
+  		background: #f2f2f2;
+  		margin: 0 auto;
+  		padding: 15px;
+  		box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 1100px) {
+    .feedback {
+      width: 90%;
+    }
+  }
+  @media (max-width: 905px) {
+    .feedback {
+      width: 100%;}
+  }
+  .rating {
+  	position: relative;
+  	bottom:25px;
+     width: 300px;
+  }
+
+  .rating__star {
+  	font-size: 30px;
+     cursor: pointer;
+     color: #ffc107;
+  }
+
+  .rating__star1 {
+  	font-size: 30px;
+     cursor: pointer;
+     color: #ffc107;
+  }
+
+  .rating__star2 {
+  	font-size: 30px;
+     cursor: pointer;
+     color: #ffc107;
+  }
+
+    #Feedback_button {
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:0px;
+    right:39.5%;
+    transition: 0.5s;
+    }
+
+    #Feedback_button:hover {
+      border: 1px solid #cba85e;
+      color: #cba85e;
+    }
+      }/*------------------------------------Nav Bar starts here---------------------------------*/
+
+
+  .navbar-logo-img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    font-family: Times, serif;
+    font-weight: bold;
+
+      }
+       @media (max-width: 905px) {
+         .navbar-logo-img {
+           font-size: 15px;
+         }
+       }
+
+/*----------------------Sign Up & Log In Form-------------------------------------------------------------*/
+
+  /* Full-width input fields */
+  /*text is msg & password is pin*/
+  .msg[type=msg], .pin[type=pin] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #f1f1f1;
+  }
+  /* Add a background color when the inputs get focus */
+  .msg[type=msg]:focus, .pin[type=pin]:focus {
+  background-color: #ddd;
+  outline: none;
+
+
+  }
+
+  /* Set a style for all buttons */
+   .signupbtnR{
+    background-color: #96F66C;
+    color: black;
+    padding: 14px 20px;
+    border: 1px solid black;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtnR {
+    width: auto;
+    padding: 14px 20px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    color:black;
+  }
+
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtnR, .signupbtnR {
+    float: left;
+    width: 50%;
+
+  }
+
+  .containerR {
+    padding: 16px;
+    font-size: 15px;
+    background-color: grey;
+    text-align: center;
+
+  }
+  .signupfooter {
+    margin-top: 10px;
+    background-color: var(--secondary-color)
+  }
+  span.psw {
+    float: right;
+    padding-top: 1px;
+  }
+
+  /* The Modal (background) */
+  .modalR {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    }
+
+  /* Modal Content/Box */
+  .modal-contentR {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+
+  }
+
+  /* The Close Button (x) */
+  .closeR {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .closeR:hover,
+  .closeR:focus {
+    color: red;
+    cursor: pointer;
+  }
+  /* Clear floats */
+.clearfixR::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.rpsw {
+       display: block;
+       float: none;
+    }
+    .cancelbtnR {
+       width: 100%;
+    }
+  }
+  /*----------------------------Sign Up & Log In Form ends here----------------------------------------*/
+
+
+
+    /* star rating 3 */
+
+
+
+
+        .rating2{
+          border: none;
+          float: left;
+          position: relative;
+          top:8px;
+        }
+
+        .rating2 > input{
+          display: none;
+        }
+
+        .rating2 > label:before{
+          content: '\f005';
+          font-family: FontAwesome;
+          margin: 5px;
+          font-size: 1.5rem;
+          display: inline-block;
+          cursor: pointer;
+        }
+
+        .rating2 > .half:before{
+          content: '\f089';
+          position: absolute;
+          cursor: pointer;
+        }
+
+
+        .rating2 > label{
+          color: #ddd;
+          float: right;
+          cursor: pointer;
+        }
+
+        .rating2 > input:checked ~ label,
+        .rating2:not(:checked) > label:hover,
+        .rating2:not(:checked) > label:hover ~ label{
+          color: yellow;
+        }
+
+        .rating2 > input:checked + label:hover,
+        .rating2 > input:checked ~ label:hover,
+        .rating2 > label:hover ~ input:checked ~ label,
+        .rating2 > input:checked ~ label:hover ~ label{
+          color: yellow;
+        }
+
+  /* Feedback completion */
+
+  .feedback_tick{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    top:100px;
+  }
+
+  }
+
+  .completion_note {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    top:100px;
+    left:150px;
+  }
+
+
+  .feedback_button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top:100px;
+  left:0px;
+  }
+
+
+
+
+
+
+
+
+
+
+  /*/ rawtbhik css /*/
+  /*-----------------Nav Bar---------------------------------*/
+
+  #container {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+
+  .toggleR,
+  [id^=drop] {
+    display: none;
+  }
+
+  /* Giving a background-color to the nav container. */
+  nav {
+    margin:0;
+    padding: 0;
+    font-size:22px;
+    line-height: 32px;
+    background-color: var(--secondary-color);
+    opacity:#0009;
+    word-wrap:break-word !important;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #logo {
+    display: block;
+    width:30%;
+    padding: 0 30px;
+    float: left;
+    font-size:25px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 905px) {
+    #logo {
+      font-size: 20px;
+    }
+  }
+  /* Since we'll have the "ul li" "float:left"
+   * we need to add a clear after the container. */
+
+  nav:after {
+    content:" ";
+    display: table;
+    clear: both;
+  }
+
+  /* Removing padding, margin and "list-style" from the "ul",
+   * and adding "position:reltive" */
+  .fag ul {
+    float: right;
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+
+  /* Positioning the navigation items inline */
+  .fag ul li {
+    margin: 0px;
+    display:inline-block;
+    float: left;
+    background-color: var(--secondary-color);
+    }
+
+  /* Styling the links */
+  .fag a {
+    display:block;
+    padding:14px 20px;
+    color:#FFF;
+    font-size:15px;
+    text-decoration:none;
+  }
+
+
+  .fag ul li ul li:hover { background: #000000; }
+
+  /* Background color change on Hover */
+  .fag a:hover {
+    background-color: #DEB77B;
+  }
+
+  /* Hide Dropdowns by Default
+   * and giving it a position of absolute */
+  nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 60px;
+  }
+
+  /* Display Dropdowns on Hover */
+  nav ul li:hover > ul {
+    display:inherit;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    width:128px;
+    float:none;
+    display:list-item;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  /* Media Queries---- */
+
+  @media all and (max-width : 768px) {
+
+    #logo {
+      display: block;
+      padding: 0px;
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+
+    nav {
+      margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggleR + a,
+    .menu {
+      display: none;
+    }
+
+    /* Styling the toggle label */
+    .toggleR {
+      display: block;
+      background-color: var(--secondary-color);
+      padding:14px 20px;
+      color:black;
+      font-size:17px;
+      text-decoration:none;
+      border:none;
+    }
+
+    .toggleR:hover {
+      background-color: #DA8C15;
+      color: black;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+      display: block;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+      display: block;
+      width: 100%;
+      }
+
+    nav ul ul .toggleR,
+    nav ul ul a {
+      padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+      padding: 0 80px;
+    }
+
+    .fag a:hover,
+    nav ul ul ul a {
+      background-color: white;
+      color: black;
+      width: 30%;
+    }
+    nav ul li ul li .toggleR,
+    nav ul ul a,
+    nav ul ul ul a{
+      padding:14px 20px;
+      color:#FFF;
+      font-size:17px;
+    }
+
+
+    nav ul li ul li .toggleR,
+    nav ul ul a {
+      background-color: #212121;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+      float: none;
+      position:static;
+      color: #ffffff;
+      /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+      display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+      display: block;
+      width: 100%;
+    }
+
+    nav ul ul ul li {
+      position: static;
+      /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+  }
+  /*---------------------------------------Navigation Bar ends here---------------------------------------------*/
+
+  /*----------------------Sign Up & Log In Form-------------------------------------------------------------*/
+
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+
+    /* Set a style for all buttons */
+    .fag button { /* ISSUE */
+      background-color: white;
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+
+
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtnR {
+      width: auto;
+      padding: 14px 20px;
+      background-color: white;
+      border: 1px solid black;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtnR, .signupbtnR {
+      float: left;
+      width: 50%;
+    }
+
+
+    .containerR {
+      padding: 16px;
+      background-color: var(--primary-color);
+
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 1px;
+    }
+
+    /* The Modal (background) */
+    .modalR {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+      }
+
+    /* Modal Content/Box */
+    .modal-contentR {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 40%; /* Could be more or less, depending on screen size */
+
+    }
+
+    /* The Close Button (x) */
+    .closeR {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .closeR:hover,
+    .closeR:focus {
+      color: red;
+      cursor: pointer;
+    }
+    /* Clear floats */
+  .clearfixR::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.rpsw {
+         display: block;
+         float: none;
+      }
+      .cancelbtnR {
+         width: 100%;
+      }
+    }
+    /*----------------------------Sign Up & Log In Form ends here----------------------------------------*/
+    .completion_note {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: "Times New Roman", Times, serif;
+  font-size:30px;
+  position: relative;
+  top:110px;
+  left:170px;
+}
+
+    #completion_button {
+    background-color:#4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:130px;
+    right:0%;
+    }
+
+.signupconfirm {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.signupconfirm:hover {
+  color: #cba85e;
+  border: 1px solid #cba85e;
+}

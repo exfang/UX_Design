@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assignment.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+<!---Links (sit on top) ------------------------------------------------------------------------------------------->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="main_Parik.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About Us</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact Us</a>
+    </div>
+    <div class="w3-col s3">
+        <a href="#feedback" class="w3-button w3-block">Feedback</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Excellence Hotel</b></h1>
+    <p></p>
+  </div>
+
+
+
+
+
+
+  <!-- About Us -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Us</span>
+    </div>
+    <p>We are a collection of All Inclusive budget hotel in the Singapore designed to surpass the expectations and needs of our guests through excellence in service.
+      By focusing all our efforts in listening and understanding what our guests need and to best accomplish that,
+      we focus on our human capital and its excellence in service, accomplishing it as a big family.</p>
+
+
+
+
+<h5>Through excellence, attitude of service, empathy, teamwork and commitment, we aim to achieve our company goals:</h5>
+<ul>
+<li>To surpass the expectations and needs of our guests</li>
+<li>To ensure the satisfaction and well-being of our employees</li>
+<li>To work towards a more socially responsible future</li>
+<li>To maintain and improve profitability</li>
+<li>To remain committed to the environment</li>
+</ul>
+
+
+<p>Hotel for travellers looking for local and authentic experiences
+We are no longer just providing a place to rest but a lifestyle and gastronomic destination where fitness enthusiasts, corporate travellers, families, local residents and foodies can enjoy our range of facilities and great restaurants.</p>
+<div>
+Mr Lee Ching Yup, Hotel Manager
+</div>
+<p>Step into a lush urban paradise just minutes away from Singapore's iconic Orchard Road and UNESCO Heritage Site, Singapore Botanic Gardens. The tranquil and locally inspired guests rooms are influenced by modern house.
+ Enjoy a cultural urban retreat whether travelling for business or leisure, with ergonomic work space, unlimited mobile internet access, state-of-the-art meeting facilities, a 24-hour gym, a lap pool, and a comfortable canteen.
+
+Excellence Hotel is located in a modern, bustling city - Singapore. Also known as the "Garden City", Singapore is covered with trees and tropical flora and fauna, making it one of the most pleasant cities to live and work in.
+The architectural design of Excellence Hotel has subtle representations of Singapore's nature, culture and heritage - past and present.
+
+Located on Excellence Road, Singapore's prime estate, the hotel is surrounded by lush greenery and within walking distance to UNESCO heritage site.</p>
+
+  </div>
+
+  <!-- Andrew's Contact form  -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"></span>
+  </div>
+
+  <body>
+<!-- Contact Us descriptions -->
+    <div class='promotion-form' style='width: 100%;'>
+      <form id='promotionform' action='Promotion Form Validation.html' method='GET' onsubmit='passvalues()'>
+        <div>
+          <h1>Contact Us</h1>
+          <p>If you have any question or would like to contact us, please feel free to dial the number below or send us an email via the email address provided below.</p>
+          <h3>Phone  &nbsp; &nbsp; (+65) 6123 4567<br>Email  &nbsp; &nbsp; contact@excellence.com</h3>
+          <p>You can also use the form below to contact us.</p>
+          <div class='dog' style='border-top: 1px solid black;'></div>
+          <p>Fields marked * are required</p>
+        </div>
+
+        <div class='promotion-form-div'>
+          <div>
+            <label for='promotion-title'>Title </label>
+          </div>
+          <div>
+            <input list='promotion-titles' id='promotiontitle' class='promotion-form-sizing' placeholder='Please Select'>
+            <datalist id='promotion-titles'>
+              <option value='Mr'>
+              <option value='Mrs'>
+              <option value='Miss'>
+              <option value='Sir'>
+              <option value='Mdms'>
+              <option value='Dr'>
+            </datalist>
+
+          </div>
+          <br>
+        </div>
+
+
+      <!-- Surname -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label for='promotion-surname' id='local1'>Family Name/ Surname*</label>
+          </div>
+          <div>
+            <input id='promotionsurname' name='promotion-surname' type='text' class='promotion-form-sizing'>
+            <div id='promoerror1'></div>
+            <p id='errormessage1' style='color: red;'></p>
+          </div>
+        </div>
+      <!-- First Name -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label for='promotion-firstname'id='local2'>First Name* </label>
+          </div>
+          <div>
+            <input id='promotionfirstname' name='promotion-firstname' type='text'class='promotion-form-sizing'>
+            <div id='promoerror2'></div>
+            <p id='errormessage2' style='color: red;'></p>
+          </div>
+        </div>
+
+      <!-- Phone number -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label for='promotion-phonenumber'>Contact Phone Number </label>
+          </div>
+          <div>
+            <input id='promotionphone' name='promo-phone' type='text' class='promotion-form-sizing' title='Please enter numbers only' pattern='[0-9]'>
+          </div>
+          <br>
+        </div>
+      <!-- Email -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label for='promotion-email' id='local3'>Email Address* </label>
+          </div>
+          <div>
+            <input id='promotionemail' name='promotion-email' type='text' class='promotion-form-sizing' title="Please enter an email address containing at least one of these special characters such as '@' and '.'" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <div id='promoerror4'></div>
+            <p id='errormessage4' style='color: red;'></p>
+          </div>
+        </div>
+
+
+      <!-- Subject-->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label class='promo-subject'id='local4'>Subject* </label>
+          </div>
+          <div>
+            <input list="promotion-subject" id='promotionsubject' name="subject" placeholder="Please Select" class='promotion-form-sizing'>
+            <datalist id='promotion-subject'>
+            <option value='Feedback'>
+            <option value='Enquiry'>
+            <option value='Account Issues'>
+            <option value='Codes'>
+            <option value='Issues'>
+          </div>
+          <div id='promoerror5'></div>
+          <p id='errormessage5' style='color: red;'></p>
+        </div>
+
+      <!-- Comments -->
+
+        <div class='promotion-form-div'>
+          <div>
+            <label for="promo-comments">Comments (if any)</label>
+          </div>
+          <div>
+            <textarea type='text' rows='5' id='promotioncomments'class='promotion-form-textbox-sizing'></textarea>
+          </div>
+        </div>
+
+    <!-- submit button-->
+        <div>
+          <button class='promotion-submit' id='promotionsubmitbutton' type="submit">Submit</button>
+          <script>
+            const promosurname = document.getElementById('promotionsurname');
+            const promotionfirstname = document.getElementById("promotionfirstname");
+            const promotionphone = document.getElementById('promotionphone');
+            const promotionemail = document.getElementById("promotionemail");
+            const promotionsubject = document.getElementById("promotionsubject");
+
+            document.getElementById('promotionform').addEventListener('submit', function(event){
+              if (promosurname.value == ''){
+                document.getElementById('promoerror1').style.display = "block";
+                document.getElementById('errormessage1').innerHTML = 'Please fill in your surname';
+                document.getElementById("local1").scrollIntoView({behavior: 'smooth'});
+                event.preventDefault();
+              }
+              else if (promotionfirstname.value == ''){
+                document.getElementById('promoerror2').style.display = "block";
+                document.getElementById('errormessage2').innerHTML = 'Please fill in your first name';
+                document.getElementById("local2").scrollIntoView({behavior: 'smooth'});
+                event.preventDefault();
+              }
+              else if (promotionemail.value == ''){
+                document.getElementById('promoerror4').style.display = "block";
+                document.getElementById('errormessage4').innerHTML = 'Please enter in your email address';
+                document.getElementById("local3").scrollIntoView({behavior: 'smooth'});
+                event.preventDefault();
+              }
+              else if (promotionsubject.value == ''){
+                document.getElementById('promoerror5').style.display = "block";
+                document.getElementById('errormessage5').innerHTML = 'Please select a subject';
+                document.getElementById("local4").scrollIntoView({behavior: 'smooth'});
+                event.preventDefault();
+              }
+            })
+          </script>
+        </div>
+      </div>
+    </form>
+
+</div>
+<!---End of Contact Us form ------------------------------------------------------------------->
+
+<!-- Feedback---------------------------------------------------------------------------------->
+<div class="w3-center w3-padding-64" id="feedback">
+  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"></span>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section>
+
+  <div class="feedback">
+      <h1 class="h1">Feedback Form</h1>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="Room"><b>Room</b></label>
+      <input type="text" placeholder="Room" name="Room" required>
+      <hr>
+      <form method="post" action="#action-url">
+      <p>1. Your overall experience with us ?</p><br></br>
+
+<div class="rating">
+ <i class="rating__star far fa-star"></i>
+ <i class="rating__star far fa-star"></i>
+ <i class="rating__star far fa-star"></i>
+ <i class="rating__star far fa-star"></i>
+ <i class="rating__star far fa-star"></i>
+</div>
+
+
+
+  <p>2.How was the room service?</p><br></br>
+  <div class="rating">
+   <i class="rating__star1 far fa-star"></i>
+   <i class="rating__star1 far fa-star"></i>
+   <i class="rating__star1 far fa-star"></i>
+   <i class="rating__star1 far fa-star"></i>
+   <i class="rating__star1 far fa-star"></i>
+ </div>
+
+<p>3. How is our Facilities?</p><br></br>
+<div class="rating">
+<i class="rating__star2 far fa-star"></i>
+<i class="rating__star2 far fa-star"></i>
+<i class="rating__star2 far fa-star"></i>
+<i class="rating__star2 far fa-star"></i>
+<i class="rating__star2 far fa-star"></i>
+</div>
+
+  <br>
+  <label for="m_3189847521540640526commentText">4. Any Other suggestions:</label><br><br>
+  <textarea cols="75" name="commentText" rows="4" style="100%"></textarea>
+  <br>
+  </br>
+  <button id='Feedback_button' type="button" onclick="window.location.href='complete1.html'">Submit your review</button>
+</form>
+  <script>
+const ratingStars = [...document.getElementsByClassName("rating__star")];
+function executeRating(stars) {
+const starClassActive = "rating__star fas fa-star";
+const starClassInactive = "rating__star far fa-star";
+const starsLength = stars.length;
+let i;
+stars.map((star) => {
+star.onclick = () => {
+i = stars.indexOf(star); //get index of star clicked on
+
+if (star.className===starClassInactive) {                    //The first if statement will check if the star clicked has the class that means it is unfulfilled.
+for (i; i >= 0; --i) stars[i].className = starClassActive;  //If so,a loop executed. We have the i of the star clicked and the loop will fulfill stars before it.
+} else {
+  for (i; i < starsLength; ++i) stars[i].className = starClassInactive; //The else statement stands for check if the star clicked is fulfilled,
+                                                                        // cause if so all the stars above the clicked star will receive an class for
+                                                                        //inactive (unfulfilled).
+}
+};
+});
+}
+executeRating(ratingStars);
+// If we click on the fourth star i receives 4 and these 4 stars will receive, in turn, the class of active (fulfilled).
+//  Then we decide to click on the second star, that is, decrease the rating, and the else is used unfulfilling the stars from 2 until 5, the max rating.
+// star2
+const ratingStars1 = [...document.getElementsByClassName("rating__star1")];
+function executeRating1(stars1) {
+const starClassActive1 = "rating__star1 fas fa-star";
+const starClassInactive1 = "rating__star1 far fa-star";
+const starsLength1 = stars1.length;
+let i;
+stars1.map((star1) => {
+star1.onclick = () => {
+i = stars1.indexOf(star1);
+
+if (star1.className===starClassInactive1) {
+  for (i; i >= 0; --i) stars1[i].className = starClassActive1;
+} else {
+  for (i; i < stars1Length; ++i) stars1[i].className = starClassInactive1;
+}
+};
+});
+}
+executeRating1(ratingStars1);
+// star3
+const ratingStars2 = [...document.getElementsByClassName("rating__star2")];
+function executeRating2(stars2) {
+const starClassActive2 = "rating__star2 fas fa-star";
+const starClassInactive2 = "rating__star2 far fa-star";
+const starsLength2 = stars2.length;
+let i;
+stars2.map((star2) => {
+ star2.onclick = () => {
+   i = stars2.indexOf(star2);
+
+   if (star2.className===starClassInactive2) {
+     for (i; i >= 0; --i) stars2[i].className = starClassActive2;
+   } else {
+     for (i; i < stars2Length; ++i) stars1[i].className = starClassInactive2;
+   }
+ };
+});
+}
+executeRating2(ratingStars2);
+</script>
+
+</section>
+<div>
+
+
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <!-- footer -->
+  <footer>
+    <div class='footer'>
+        <div class='footer-heading footer-1'>
+          <h2 class='footer-title'>Useful Links</h2>
+          <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+          <a class='footer-links' href="main_Parik.html">Reviews</a>
+          <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+          <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2 class='footer-title'>Forms</h2>
+          <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+          <a class='footer-links' href="UXFABOOKING_Cyrus.html" target="_blank">Facilities Booking Form</a>
+          <a class='footer-links' href="Promotion Form_Andrew.html" target="_blank">Contact Us Form</a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2 class='footer-title'>Members</h2>
+          <a class='footer-links' href="main_Parik.html">Sign Up</a>
+          <a class='footer-links' href="main_Parik.html">Login</a>
+          <a class='footer-links' href="#"></a>
+          <a class='footer-links' href="#"></a>
+        </div>
+        <div class="footer-heading footer-4">
+          <h2 class='footer-title'>Connect With Us</h2>
+          <span>
+            <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+            <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

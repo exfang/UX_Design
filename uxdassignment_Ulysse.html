@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms </title>
+  <link rel="stylesheet" href="assignment.css">
+  <script defer src="script.js"></script>
+
+  <nav>
+      <div class="navbar-logo-img" id="logo">
+         <a class=''href='main_Parik.html' style='font-family:Times;text-decoration: none; color: black;'><img src="images\logo (2).png"> EXCELLENCE HOTEL </img></a>
+
+       </div>
+<div class='fag'>
+      <label for="drop" class="toggleR">Menu</label>
+      <input type="checkbox" id="drop" />
+          <ul class="menu">
+            <li>
+
+
+
+                <!-- First Tier Drop Down -->
+
+              <a class="buttonR" href="About Us page_RTB.html" style="color:black" >About Us</a>
+
+              <input type="checkbox" id="drop-1"/>
+
+
+
+              <li><a href="uxdassignment_Ulysse.html" style="color:black">Room & Suites</a></li>
+              <li><a href="UXfacility_Cyrus.html" style="color:black">Facilities</a></li>
+              <li><a href="Promotion Secondary_Andrew.html" style="color:black">Promotions</a></li>
+
+              <li>
+              <ul>
+              <!-- Second Tier Drop Down -->
+              <label for="drop-2" class="toggleR">Sign Up/Log In</label>
+              <a href="#">Sign Up/Log In</a>
+              <input type="checkbox" id="drop-2"/>
+
+              </ul>
+              </li>
+              <!-- Log In Button -->
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Log In</button>
+
+                <div id="id01" class="modalR">
+                <span onclick="document.getElementById('id01').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                <form class="modal-contentR" action="/action_page.php" >
+                <div class="containerR">
+                <h1>Log In</h1>
+                <hr>
+                <p><label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                <p><label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                <p><label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label></p>
+
+                <div class="clearfixR">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnR">Cancel</button>
+                  <button type="submit" class="signupbtnR" href="Successful creation.html" >Log In</button>
+                </div>
+                </div>
+                </form>
+                </div>
+
+
+
+                  <!-- Sign Up Button -->
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Sign Up</button>
+
+                  <div id="id02" class="modalR">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                  <form class="modal-contentR" action="/action_page.php">
+                  <div class="containerR">
+                  <h1>Sign Up</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+                  <p><label for="name"><b>Name</b></label>
+                  <input type="text" placeholder="Enter Name" name="name" required></p>
+
+                  <p><label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                  <p><label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                  <p><label for="psw-repeat"><b>Confirm Password</b></label>
+                  <input type="password" placeholder="Re-Enter Password" name="psw-repeat" required></p>
+
+
+                  <div class="clearfixR">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnR">Cancel</button>
+
+                    <button type="submit" class="signupbtnR" href="C:\Users\turbo\Documents\NYP\UX Design\prcatical 1 index.html\4fun.html">Create</button>
+                  </div>
+                  </div>
+                  </form>
+                  </div>
+
+
+
+                    </li>
+
+              </ul>
+</div>
+      </nav>
+
+</head>
+
+<!--rooms-->
+
+<body>
+
+  <section id="rooms-list" class="room-room rooms-list">
+    <div class="room-container room-container-medium">
+        <div class="room-row room-row-2">
+            <h2>Rooms</h2>
+            <select>
+                <option>Default</option>
+                <option>Sort by Price, low to high </option>
+                <option>Sort by Price, high to low </option>
+                <option>Sort by Reviews</option>
+                <option>Sort by Popularity</option>
+            </select>
+
+        </div>
+        <div class="room-row">
+            <div class="room-col-2">
+                <div class="room-image">
+                    <img src="images\quintessential.jpg" alt="room-room">
+                </div>
+                <div class="room-info">
+                    <div>
+                        <h4> The quientessentail </h4>
+                        <p class="room-price"><span id = "room-cost">S$95</span> <span id = "room-smaller" > /night  </span></p>
+                        <p> The quintessential comes with a single bed, chair, desk, cupboard, dressing table, telephone, and a private bathroom.</p>
+                      <a href="formbooking_Ulysse.html">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-col-2">
+                <div class="room-image">
+                    <img src="images\comfort.jpg" alt="room-room">
+                </div>
+                <div class="room-info">
+                    <div>
+                      <h4> The comfort </h4>
+                      <p class="room-price"><span id = "room-cost">S$115</span> <span id = "room-smaller" > /night  </span></p>
+                      <p> The comfort comes with a queen sized bed, chair, desk, cupboard, dressing table, telephone, and a private bathroom </p>
+                      <a href="formbooking_Ulysse.html">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-row">
+            <div class="room-col-2">
+                <div class="room-image">
+                    <img src="images\superior.jpg" alt="room-room">
+                </div>
+                <div class="room-info">
+                    <div>
+                      <h4 > The superior </h4>
+                      <p class="room-price"><span id = "room-cost">S$135</span> <span id = "room-smaller" > /night  </span></p>
+                      <p> The superior comes with a queen sized bed, chair, desk, cupboard, dressing table, telephone, and private bathroom with a bathub</p>
+                      <a href="formbooking_Ulysse.html">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-col-2">
+                <div class="room-image">
+                    <img src="images\deluxe.jpg" alt="room-room">
+                </div>
+                <div class="room-info">
+                    <div>
+                      <h4> The deluxe </h4>
+                      <p class="room-price"><span id = "room-cost">S$155</span> <span id = "room-smaller" > /night  </span></p>
+                      <p> The deluxe comes with a king sized bed, chair, desk, cupboard, dressing table, telephone, and private bathroom with a bathub </p>
+                      <a href="formbooking_Ulysse.html"> BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--17/7/2021 0105-->
+  </section>
+
+<!--reasons to come-->
+
+<section class="room-features">
+    <div class="room-container room-container-medium">
+        <div class="room-row">
+            <div class="room-col-3">
+              <img class="room-tm-serimage" src="images\wifi.png">
+              <h4>Free Wi-Fi</h4>
+              <p>Enjoy your stay with Wi-Fi for your web browsing</p>
+            </div>
+            <div class="room-col-3">
+              <img class="room-tm-serimage" src="images\parked-car.png">
+              <h4>Free Parking</h4>
+              <p> No need to pay extra charges to park your vehicle</p>
+            </div>
+            <div class="room-col-3">
+                <img class="room-tm-serimage" src="images\dinner.png">
+                <h4>Free Meal</h4>
+                <p>Every room booking comes with a complimentary meal to boost your day</p>
+            </div>
+        </div>
+        <div class="room-row">
+            <div class="room-col-3">
+                <img class="room-tm-serimage" src="images\bed-sheets.png">
+                <h4>Clean Sheets</h4>
+                <p>Every bed comes equipped with linen bedding set, which is light yet cozy</p>
+            </div>
+            <div class="room-col-3">
+                <img class="room-tm-serimage" src="images\coffee-machine.png">
+                <h4>Coffee Machine</h4>
+                <p> Every room has a coffee machine with complimentary capsules for their coffee fix</p>
+            </div>
+            <div class="room-col-3">
+                <img class="room-tm-serimage" src="images\television.png">
+                <h4>Television</h4>
+                <p> Every room has a television with cable channels, so there is some sort of entertainment</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+
+<!--footer section-->
+
+<!-- footer -->
+<footer>
+  <div class='footer'>
+      <div class='footer-heading footer-1'>
+        <h2 class='footer-title'>Useful Links</h2>
+        <a class='footer-links' href="UXfacility_Cyrus.html">Facilities</a>
+        <a class='footer-links' href="main_Parik.html">Reviews</a>
+        <a class='footer-links' href="Promotion Secondary_Andrew.html">Promotions</a>
+        <a class='footer-links' href="FAQ_Ulysse.html">FAQ</a>
+      </div>
+      <div class="footer-heading footer-2">
+        <h2 class='footer-title'>Forms</h2>
+        <a class='footer-links' href="formbooking_Ulysse.html" target="_blank">Rooms Booking Form</a>
+        <a class='footer-links' href="UXFABOOKING_Cyrus.html" target="_blank">Facilities Booking Form</a>
+        <a class='footer-links' href="Promotion Form_Andrew.html" target="_blank">Contact Us Form</a>
+        <a class='footer-links' href="#"></a>
+      </div>
+      <div class="footer-heading footer-3">
+        <h2 class='footer-title'>Members</h2>
+        <a class='footer-links' href="main_Parik.html">Sign Up</a>
+        <a class='footer-links' href="main_Parik.html">Login</a>
+        <a class='footer-links' href="#"></a>
+        <a class='footer-links' href="#"></a>
+      </div>
+      <div class="footer-heading footer-4">
+        <h2 class='footer-title'>Connect With Us</h2>
+        <span>
+          <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+          <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+          <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+        </span>
+      </div>
+    </div>
+</footer>
+
+</html>

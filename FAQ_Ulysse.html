@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> T&C and FAQ </title>
+  <link rel="stylesheet" href="assignment.css">
+  <script defer src="script.js"></script>
+
+  <nav>
+      <div class="navbar-logo-img" id="logo">
+         <a class=''href='main_Parik.html' style='font-family:Times;text-decoration: none; color: black;'><img src="images\logo (2).png"> EXCELLENCE HOTEL </img></a>
+
+       </div>
+<div class='fag'>
+      <label for="drop" class="toggleR">Menu</label>
+      <input type="checkbox" id="drop" />
+          <ul class="menu">
+            <li>
+
+
+
+                <!-- First Tier Drop Down -->
+
+              <a class="buttonR" href="About Us page_RTB.html" style="color:black" >About Us</a>
+
+              <input type="checkbox" id="drop-1"/>
+
+
+
+              <li><a href="uxdassignment_Ulysse.html" style="color:black">Room & Suites</a></li>
+              <li><a href="UXfacility_Cyrus.html" style="color:black">Facilities</a></li>
+              <li><a href="Promotion Secondary_Andrew.html" style="color:black">Promotions</a></li>
+
+              <li>
+              <ul>
+              <!-- Second Tier Drop Down -->
+              <label for="drop-2" class="toggleR">Sign Up/Log In</label>
+              <a href="#">Sign Up/Log In</a>
+              <input type="checkbox" id="drop-2"/>
+
+              </ul>
+              </li>
+              <!-- Log In Button -->
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Log In</button>
+
+                <div id="id01" class="modalR">
+                <span onclick="document.getElementById('id01').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                <form class="modal-contentR" action="/action_page.php" >
+                <div class="containerR">
+                <h1>Log In</h1>
+                <hr>
+                <p><label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                <p><label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                <p><label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label></p>
+
+                <div class="clearfixR">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnR">Cancel</button>
+                  <button type="submit" class="signupbtnR" href="Successful creation.html" >Log In</button>
+                </div>
+                </div>
+                </form>
+                </div>
+
+
+
+                  <!-- Sign Up Button -->
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; background-color:#DEB77B; color: black;">Sign Up</button>
+
+                  <div id="id02" class="modalR">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="closeR" title="Close Modal">&times;</span>
+                  <form class="modal-contentR" action="/action_page.php">
+                  <div class="containerR">
+                  <h1>Sign Up</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+                  <p><label for="name"><b>Name</b></label>
+                  <input type="text" placeholder="Enter Name" name="name" required></p>
+
+                  <p><label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required></p>
+
+                  <p><label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required></p>
+
+                  <p><label for="psw-repeat"><b>Confirm Password</b></label>
+                  <input type="password" placeholder="Re-Enter Password" name="psw-repeat" required></p>
+
+
+                  <div class="clearfixR">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnR">Cancel</button>
+
+                    <button type="submit" class="signupbtnR" href="C:\Users\turbo\Documents\NYP\UX Design\prcatical 1 index.html\4fun.html">Create</button>
+                  </div>
+                  </div>
+                  </form>
+                  </div>
+
+
+
+                    </li>
+
+              </ul>
+</div>
+      </nav>
+
+</head>
+
+<!--rooms-->
+
+<body>
+  <section id="faq-page" class="faq-page">
+    <div class="room-container room-container-medium">
+                <div class="faq-header">
+                    <h2 style="font-size: 4rem" class="headline"> <u> Terms  & Conditions </u></h2>
+                </div>
+                <div class="faq-table">
+
+
+                                  <!-- drop down 1 -->
+                                <div class="faqdropdown">
+                                  <button onclick="faqmyFunction14()" class="faqdropbtn">Terms & Conditions </button>
+                                  <div id="faqmyDropdown14" class="faqdropdown-content">
+                                          <ul><b>Cancellation Policy: </b></ul>
+                                          <ul>Rates are subject to 10% service charge and prevailing government taxes </ul>
+                                          <ul>- A valid credit card is required to guarantee the reservation </ul>
+                                          <ul>- Reservations must be cancelled or modified 7 days prior to arrival day to avoid a 100% cancellation fee for non-promotional rates.</ul>
+                                          <ul>- On booking of non-refundable promotional rate plans, you will be charged in full for this pre-paid rate. Please note that no refunds (room rate or tax) can be given for cancellation. Cancellation will result in forfeiture of 100% of the reservation. Changes of dates will be charged an amendment fee of SGD40nett.</ul>
+                                          <ul>- Full reservation charged for No-Show.</ul>
+                                          <ul>- Management reserves the right to amend the Terms and Conditions without prior notice </ul>
+                                          <hr>
+                                          <ul><b>Terms and Conditions: </b></ul>
+                                          <ul> • Reservations will be charged in the hotel’s local currency </ul>
+                                          <ul> • A security deposit of SGD100 per booking is required upon check in. </ul>
+                                          <ul> • Child below 10-year-old stay for free using existing bed. No breakfast included.</ul>
+                                          <ul> • Additional occupant 10-year-old and above is chargeable at SGD25 nett per night using existing bed. Extra bed is available at SGD55 nett per night.</ul>
+                                          <ul> • Only registered guests are allowed in hotel rooms. All visitors must leave hotel premises by 11pm. </ul>
+                                          <ul> • Minimum age requirement for check in is 19 years old.</ul>
+                                          <ul> • No pets and no service animals are allowed at the hotel.</ul>
+                                          <ul> • For reservation/s which are paid on arrival, our Hotel reserves the right to pre-authorize credit card offline and/or cancel reservation/s made with invalid credit card without notice.
+<br><br>
+ •No gatherings and parties of any nature are allowed. The hotel reserves the right to evict any additional occupants in the room. This reservation is not transferable. No name change is allowed. All information, feedback and data submitted to excellence hotel management Pte Ltd at this website (whether by e-mail or otherwise) shall be deemed to be non-confidential and shall become the property of excellence hotel management Pte Ltd and excellence hotel management Pte Ltd shall not be subject to any obligation of confidentiality. excellence hotel management Pte Ltd shall be entitled to use such feedback and information on an unrestricted basis for any purpose – including reproduction, disclosure to third parties, transmission, publication, broadcast, further posting, and the development, marketing and promotion of facilities, products or services.</ul>
+                                          <ul> • Reservation confirmations are provided to you solely for your convenience. Excellence Hotel will retain official records of reservation transactions, including details of dates of stay and room, product and service rates. In the event of discrepancies, alterations, modifications, or variations between this confirmation and our official records, excellence hotel's official records shall prevail. Tampering with this confirmation to alter any room, product or service rate or any other reservation information is strictly prohibited and will have legal consequences. </ul>
+                                          <ul> • Excellence hotel has a early departure penalty fee and some room, product and service rates may also require a minimum stay. You may change your check out date without a penalty only if your rate and the excellence hotel’s policy permits.  </ul>
+                                          <ul> • In the event that a guest cannot be accommodated due to the Excellence hotel overbooking or an unforeseen circumstance, Excellence hotel will attempt to accommodate guests, at its expense, at a comparable property in the area for the night(s) for which the Excellence hotel is unable to accommodate such guests, and will pay for transportation to that property. </ul>
+                                          <ul> • Excellence hotel will strive to honour any request for specific room types or bed types and some Excellence hotel will confirm such arrangements at the time you make your reservation. Until specific confirmation is issued then your request cannot be guaranteed and neither Excellence Hotel can guarantee that your request will be honoured. </ul>
+                                          <ul><b>Guest's obligations: </b></ul>
+                                          <ul> • You agree to the terms and conditions of purchase imposed by Excellence hotel. You also agree that you are fully responsible and shall pay for all charges, fees, duties, taxes, assessments and other amounts arising out of your reservation when due, including additional taxes and fees that may not be included in the quoted rate.<br>
+You understand that any violation of an Excellence hotel’s conditions may result in cancellation of your reservation and you forfeiting any monies paid for such reservation and an Excellence hotel debiting your account for any costs it incurs as a result of such violation.</ul>
+                                          <ul><b> Privacy and data protection: </b></ul>
+                                          <ul> • Our Reservation Privacy Policy (set out below) will apply to your reservation and forms part of these Reservation Terms and Conditions.</ul>
+                                          <ul><b> Contact Details: </b></ul>
+                                          <ul> • Excellence hotel, Singapore road , Singapore123456 .
+<br>
+Any queries arising from these Reservations Terms and Conditions should be sent by email to: roomreservation@excellencehotel.com .</ul>
+
+                                  </div>
+                                </div>
+
+                                  <hr style="width: 700px;"/>
+
+
+                  <div class="faq-header">
+                      <h2 style="font-size: 4rem" class="headline"> <u> FAQ </u></h2>
+                  </div>
+                  <div class="faq-table">
+
+
+                                  <!-- drop down 1 -->
+                                <div class="faqdropdown">
+                                  <button onclick="faqmyFunction1()" class="faqdropbtn">Is the tap water safe for drinking?</button>
+                                  <div id="faqmyDropdown1" class="faqdropdown-content">
+                                    <p> Yes! Singapore's water is definitely safe for drinking!</p>
+                                  </div>
+                                </div>
+
+                                  <hr style="width: 700px;"/>
+
+                                  <!-- drop down 2 -->
+                                <div class="faqdropdown">
+                                  <button onclick="faqmyFunction2()" class="faqdropbtn">Are there any shopping centers near by?</button>
+                                  <div id="faqmyDropdown2" class="faqdropdown-content">
+                                    <p> Yes! it's a 5 minutes walk away from bugis BHG!</p>
+                                  </div>
+                                </div>
+
+                                  <hr style="width: 700px;"/>
+
+                                  <!-- drop down 3 -->
+                                <div class="faqdropdown">
+                                  <button onclick="faqmyFunction3()" class="faqdropbtn">What kind of food do the hotel offer?</button>
+                                  <div id="faqmyDropdown3" class="faqdropdown-content">
+                                    <p> There is a chef-in-a-box vending machine that dispenses ready-to-eat meals! offering a range of vegetarian, vegan, and halal food!</p>
+                                  </div>
+                                </div>
+
+                                  <hr style="width: 700px;"/>
+
+                                  <!-- drop down 4 -->
+                                <div class="faqdropdown">
+                                  <button onclick="faqmyFunction4()" class="faqdropbtn">What is the check-in and check-out time?</button>
+                                  <div id="faqmyDropdown4" class="faqdropdown-content">
+                                    <p>The typical check-in time is between 3pm-4pm and check out time is 11AM. However special arrangement could be made. Please contact us @ +65 9123 4567 or email us roomreservation@excellencehotel.com for more information.</p>
+                                  </div>
+                                </div>
+
+                                <hr style="width: 700px;"/>
+
+                                <!-- drop down 5 -->
+                                <div class="faqdropdown">
+                                  <button onclick="faqmyFunction5()" class="faqdropbtn">Do you accept walk-in reservation/booking?</button>
+                                  <div id="faqmyDropdown5" class="faqdropdown-content">
+                                    <p>Walk-in reservation/booking is limited to remaining rooms availability!</p>
+                                  </div>
+                                </div>
+
+                                <hr style="width: 700px;"/>
+
+                                <!-- drop down 6 -->
+                              <div class="faqdropdown">
+                                <button onclick="faqmyFunction6()" class="faqdropbtn">What is the accepted payment method?</button>
+                                <div id="faqmyDropdown6" class="faqdropdown-content">
+                                  <p>For online booking/reservation, the default payment method is via credit card only. </p>
+                                  <p> For walk-in booking/reservation, cash and credit card payment is accepted.</p>
+                                </div>
+                              </div>
+
+                            <hr style="width: 700px;"/>
+
+                              <!-- drop down 7 -->
+                            <div class="faqdropdown">
+                              <button onclick="faqmyFunction7()" class="faqdropbtn">What is the fee for late checkout?</button>
+                              <div id="faqmyDropdown7" class="faqdropdown-content">
+                                <p> the fee for late check out is $20 and 15 for every subsequent half an hour.</p>
+                              </div>
+                            </div>
+
+                            <hr style="width: 700px;"/>
+
+                              <!-- drop down 8 -->
+                            <div class="faqdropdown">
+                              <button onclick="faqmyFunction8()" class="faqdropbtn">How do I check-in?</button>
+                              <div id="faqmyDropdown8" class="faqdropdown-content">
+                                <p> Check-in would be done by the front desk of the service lobby. Please bring along your identity card, and passport if you are a foreigner. </p>
+                              </div>
+                            </div>
+
+                            <hr style="width: 700px;"/>
+
+                              <!-- drop down 9 -->
+                            <div class="faqdropdown">
+                              <button onclick="faqmyFunction9()" class="faqdropbtn">Is there a pick up / drop off point?</button>
+                              <div id="faqmyDropdown9" class="faqdropdown-content">
+                                <p> Yes there is a pick up and drop off point right beside the foot way of the hotel's doorstep. </p>
+                              </div>
+                            </div>
+
+                            <hr style="width: 700px;"/>
+
+                              <!-- drop down 10 -->
+                            <div class="faqdropdown">
+                              <button onclick="faqmyFunction10()" class="faqdropbtn">What happens if i require cleaning services?</button>
+                              <div id="faqmyDropdown10" class="faqdropdown-content">
+                                <p> Please do contact the service desk if cleaning services is required and we will get to it ASAP. </p>
+                              </div>
+                            </div>
+
+                            <hr style="width: 700px;"/>
+
+                              <!-- drop down 11 -->
+                            <div class="faqdropdown">
+                              <button onclick="faqmyFunction11()" class="faqdropbtn">How do I contact the hotel?</button>
+                              <div id="faqmyDropdown11" class="faqdropdown-content">
+                                <p> You could contact us by calling +65 9123 4567 or email us roomreservation@excellencehotel.com for any enquiries! </p>
+                              </div>
+                            </div>
+
+                            <hr style="width: 700px;"/>
+
+                            <!-- drop down 12 -->
+                          <div class="faqdropdown">
+                            <button onclick="faqmyFunction12()" class="faqdropbtn">Will I be charged for extra guests occupying my room?</button>
+                            <div id="faqmyDropdown12" class="faqdropdown-content">
+                              <p> Yes. Guests that stays the night, who are not mentioned in the booking form would be charged the cost of an extra booking fee. </p>
+                            </div>
+                          </div>
+
+                          <hr style="width: 700px;"/>
+
+                            <!-- drop down 13 -->
+                          <div class="faqdropdown">
+                            <button onclick="faqmyFunction13()" class="faqdropbtn">Is there a minimum age requirement to reserve/book a room?</button>
+                            <div id="faqmyDropdown13" class="faqdropdown-content">
+                              <p> Yes! A minimum age of 19 is required when booking/reserving a room! </p>
+                            </div>
+                          </div>
+
+</section>
+</body>
+<!-- footer -->
+<footer>
+  <div class='footer'>
+      <div class='footer-heading footer-1'>
+        <h2 class='footer-title'>Useful Links</h2>
+        <a class='footer-links' href="#">Facilities</a>
+        <a class='footer-links' href="#">Reviews</a>
+        <a class='footer-links' href="#">Promotions</a>
+        <a class='footer-links' href="#">FAQ</a>
+      </div>
+      <div class="footer-heading footer-2">
+        <h2 class='footer-title'>Forms</h2>
+        <a class='footer-links' href="#">Rooms Booking Form</a>
+        <a class='footer-links' href="#">Facilities Booking Form</a>
+        <a class='footer-links' href="Promotion Form.html" target="_blank">Contact Us Form</a>
+        <a class='footer-links' href="#"></a>
+      </div>
+      <div class="footer-heading footer-3">
+        <h2 class='footer-title'>Members</h2>
+        <a class='footer-links' href="#">Sign Up</a>
+        <a class='footer-links' href="#">Login</a>
+        <a class='footer-links' href="#"></a>
+        <a class='footer-links' href="#"></a>
+      </div>
+      <div class="footer-heading footer-4">
+        <h2 class='footer-title'>Connect With Us</h2>
+        <span>
+          <a href='#'><img class='footer-a' href='#' src='images\Instagram.jpg'></a>
+          <a href='#'><img class='footer-a' href='#' src='images\Facebook.png'></a>
+          <a href='#'><img class='footer-a' href='#' src='images\Twitter.png'></a>
+        </span>
+      </div>
+    </div>
+</footer>
+
+</html>
