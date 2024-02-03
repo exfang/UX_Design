@@ -1,4 +1,4 @@
-# Project Description - Nanyang Polytechnic UX Design Module
+# Project Description - Nanyang Polytechnic's Diploma in Applied AI and Analytics Year 1 UX Design Module
 
 This repository contains my group's static website for the UX Design module. It showcases our collective efforts in understanding and applying the principles of UX design to create an engaging and user-friendly static website.
 
